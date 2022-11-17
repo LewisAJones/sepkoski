@@ -1,0 +1,303 @@
+interval_max,interval_min,code,original_interval
+Gelasian,Meghalayan,Q,Quaternary
+Greenlandian,Meghalayan,R,Recent (Holocene)
+Late Pleistocene,Late Pleistocene,Plei-u,Upper Pleistocene
+Gelasian,Gelasian,Plei-l,Lower Pleistocene
+Gelasian,Late Pleistocene,Plei,Pleistocene
+Danian,Late Pleistocene,T,Tertiary
+Aquitanian,Piacenzian,Ng,Neogene
+Zanclean,Piacenzian,Plio,Pliocene
+Piacenzian,Piacenzian,Plio-u,Upper Pliocene
+Zanclean,Zanclean,Plio-l,Lower Pliocene
+Aquitanian,Messinian,Mi,Miocene
+Tortonian,Messinian,Mi-u,Upper Miocene
+Messinian,Messinian,Mi-u-u,Messinian
+Tortonian,Tortonian,Mi-u-l,Tortonian
+Langhian,Serravallian,Mi-m,Serravallian/Langhian
+Langhian,Langhian,Mi-m-l,Langhian
+Aquitanian,Burdigalian,Mi-l,Lower Miocene
+Burdigalian,Burdigalian,Mi-l-u,Burdigalian
+Aquitanian,Aquitanian,Mi-l-l,Aquitanian
+Danian,Chattian,Pg,Paleogene
+Rupelian,Chattian,Ol,Oligocene
+Chattian,Chattian,Ol-u,Chattian
+Rupelian,Rupelian,Ol-l,Rupelian
+Rupelian,Rupelian,Ol-l-u,Rupelian
+Rupelian,Rupelian,Ol-l-l,Rupelian
+Ypresian,Priabonian,Eo,Eocene
+Priabonian,Priabonian,Eo-u,Priabonian
+Lutetian,Bartonian,Eo-m,Middle Eocene
+Bartonian,Bartonian,Eo-m-u,Bartonian
+Lutetian,Lutetian,Eo-m-l,Lutetian
+Ypresian,Ypresian,Eo-l,Ypresian
+Ypresian,Ypresian,Eo-l-l,Ypresian
+Danian,Thanetian,Pale,Paleocene
+Thanetian,Thanetian,Than,Thanetian
+Thanetian,Thanetian,Than-u,Thanetian
+Thanetian,Thanetian,Than-l,Thanetian
+Danian,Danian,Dani,Danian
+Danian,Danian,Dani-u,Danian
+Danian,Danian,Dani-l,Danian
+Berriasian,Maastrichtian,K,Cretaceous
+Cenomanian,Maastrichtian,K-u,Upper Cretaceous
+Coniacian,Maastrichtian,Sn,Senonian
+Maastrichtian,Maastrichtian,Maas,Maastrichtian
+Maastrichtian,Maastrichtian,Maas-u,Maastrichtian
+Maastrichtian,Maastrichtian,Maas-l,Maastrichtian
+Campanian,Campanian,Camp,Campanian
+Campanian,Campanian,Camp-u,Campanian
+Campanian,Campanian,Camp-l,Campanian
+Santonian,Santonian,Sant,Santonian
+Santonian,Santonian,Sant-l,Santonian
+Santonian,Santonian,Sant-u,Santonian
+Coniacian,Coniacian,Coni,Coniacian
+Coniacian,Coniacian,Coni-u,Coniacian
+Coniacian,Coniacian,Coni-l,Coniacian
+Turonian,Turonian,Turo,Turonian
+Turonian,Turonian,Turo-u,Turonian
+Turonian,Turonian,Turo-l,Turonian
+Cenomanian,Cenomanian,Ceno,Cenomanian
+Cenomanian,Cenomanian,Ceno-u,Cenomanian
+Cenomanian,Cenomanian,Ceno-m,Cenomanian
+Cenomanian,Cenomanian,Ceno-l,Cenomanian
+Barremian,Coniacian,K-m,Middle Cretaceous
+Berriasian,Albian,K-l,Lower Cretaceous
+Albian,Albian,Albi,Albian
+Albian,Albian,Albi-u,Albian
+Albian,Albian,Albi-m,Albian
+Albian,Albian,Albi-l,Albian
+Aptian,Aptian,Apti,Aptian
+Aptian,Aptian,Apti-u,Aptian
+Aptian,Aptian,Apti-l,Aptian
+Barremian,Barremian,Barr,Barremian
+Barremian,Barremian,Barr-u,Barremian
+Barremian,Barremian,Barr-l,Barremian
+Berriasian,Hauterivian,Nc,Neocomian
+Hauterivian,Hauterivian,Haut,Hauterivian
+Hauterivian,Hauterivian,Haut-u,Hauterivian
+Hauterivian,Hauterivian,Haut-l,Hauterivian
+Valanginian,Valanginian,Vala,Valanginian
+Valanginian,Valanginian,Vala-u,Valanginian
+Valanginian,Valanginian,Vala-l,Valanginian
+Berriasian,Berriasian,Berr,Berriasian
+Berriasian,Berriasian,Berr-u,Berriasian
+Berriasian,Berriasian,Berr-l,Berriasian
+Hettangian,Tithonian,J,Jurassic
+Oxfordian,Tithonian,J-u,Upper Jurassic
+Tithonian,Tithonian,Tith,Tithonian
+Tithonian,Tithonian,Tith-u,Tithonian
+Tithonian,Tithonian,Tith-l,Tithonian
+Kimmeridgian,Kimmeridgian,Kimm,Kimmeridgian
+Kimmeridgian,Kimmeridgian,Kimm-u,Kimmeridgian
+Kimmeridgian,Kimmeridgian,Kimm-l,Kimmeridgian
+Oxfordian,Oxfordian,Oxfo,Oxfordian
+Oxfordian,Oxfordian,Oxfo-u,Oxfordian
+Oxfordian,Oxfordian,Oxfo-m,Oxfordian
+Oxfordian,Oxfordian,Oxfo-l,Oxfordian
+Aalenian,Callovian,J-m,Middle Jurassic
+Callovian,Callovian,Call,Callovian
+Callovian,Callovian,Call-u,Callovian
+Callovian,Callovian,Call-m,Callovian
+Callovian,Callovian,Call-l,Callovian
+Bathonian,Bathonian,Bath,Bathonian
+Bathonian,Bathonian,Bath-u,Bathonian
+Bathonian,Bathonian,Bath-m,Bathonian
+Bathonian,Bathonian,Bath-l,Bathonian
+Bajocian,Bajocian,Bajo,Bajocian
+Bajocian,Bajocian,Bajo-u,Bajocian
+Bajocian,Bajocian,Bajo-l,Bajocian
+Aalenian,Aalenian,Aale,Aalenian
+Hettangian,Toarcian,J-l,Lower Jurassic
+Toarcian,Toarcian,Toar,Toarcian
+Toarcian,Toarcian,Toar-u,Toarcian
+Toarcian,Toarcian,Toar-l,Toarcian
+Pliensbachian,Pliensbachian,Plie,Pliensbachian
+Pliensbachian,Pliensbachian,Plie-u,Pliensbachian
+Pliensbachian,Pliensbachian,Plie-l,Pliensbachian
+Sinemurian,Sinemurian,Sine,Sinemurian
+Sinemurian,Sinemurian,Sine-u,Sinemurian
+Sinemurian,Sinemurian,Sine-l,Sinemurian
+Hettangian,Hettangian,Hett,Hettangian
+Hettangian,Hettangian,Hett-u,Hettangian
+Hettangian,Hettangian,Hett-l,Hettangian
+Induan,Rhaetian,Tr,Triassic
+Carnian,Rhaetian,Tr-u,Upper Triassic
+Norian,Norian,Nori,Norian
+Norian,Norian,Nori-u,Norian
+Norian,Norian,Nori-m,Norian
+Norian,Norian,Nori-l,Norian
+Rhaetian,Rhaetian,Rhae,Rhaetian
+Rhaetian,Rhaetian,Rhae-u,Rhaetian
+Rhaetian,Rhaetian,Rhae-l,Rhaetian
+Carnian,Carnian,Carn,Carnian
+Carnian,Carnian,Carn-u,Carnian
+Carnian,Carnian,Carn-l,Carnian
+Anisian,Ladinian,Tr-m,Middle Triassic
+Ladinian,Ladinian,Ladi,Ladinian
+Ladinian,Ladinian,Ladi-u,Ladinian
+Ladinian,Ladinian,Ladi-l,Ladinian
+Anisian,Anisian,Anis,Anisian
+Anisian,Anisian,Anis-u,Anisian
+Anisian,Anisian,Anis-m,Anisian
+Anisian,Anisian,Anis-l,Anisian
+Induan,Olenekian,Tr-l,Lower Triassic
+Olenekian,Olenekian,Olen,Olenekian
+Olenekian,Olenekian,Olen-u,Olenekian
+Olenekian,Olenekian,Olen-l,Olenekian
+Olenekian,Olenekian,Nm,Nammalian
+Induan,Induan,Indu,Induan
+Induan,Induan,Indu-u,Induan
+Induan,Induan,Indu-l,Induan
+Asselian,Changhsingian,P,Permian
+Wuchiapingian,Changhsingian,P-u,Upper Permian
+Wuchiapingian,Changhsingian,Tatr,Tatarian
+Wuchiapingian,Changhsingian,Dora,Dorashamian
+Wuchiapingian,Wuchiapingian,Djhu,Djulfian
+Roadian,Capitanian,Guad,Guadalupian
+Capitanian,Capitanian,Guad-u,Guadalupian
+Wordian,Wordian,Guad-l,Guadalupian
+Roadian,Capitanian,P-m,Middle Permian
+Asselian,Kungurian,P-l,Lower Permian
+Kungurian,Kungurian,Leon,Leonardian
+Kungurian,Kungurian,Leon-u,Leonardian
+Kungurian,Kungurian,Leon-m,Leonardian
+Kungurian,Kungurian,Leon-l,Leonardian
+Sakmarian,Sakmarian,Sakm,Sakmarian
+Sakmarian,Sakmarian,Sakm-u,Sakmarian
+Sakmarian,Sakmarian,Sakm-l,Sakmarian
+Asselian,Asselian,Asse,Asselian
+Asselian,Asselian,Asse-u,Asselian
+Asselian,Asselian,Asse-l,Asselian
+Sakmarian,Asselian,Wc,Wolfcampanian
+Tournaisian,Gzhelian,C,Carboniferous
+Bashkirian,Gzhelian,Pn,Pennsylvanian
+Bashkirian,Gzhelian,C-u,Upper Carboniferous
+Gzhelian,Kasimovian,Step,Stephanian
+Gzhelian,Gzhelian,Step-u,Gzelian
+Kasimovian,Kasimovian,Step-l,Kasimovian
+Moscovian,Moscovian,Mosc,Moscovian
+Moscovian,Moscovian,Mosc-u,Moscovian
+Moscovian,Moscovian,Mosc-l,Moscovian
+Bashkirian,Bashkirian,Bash,Bashkirian
+Bashkirian,Bashkirian,Bash-u,Bashkirian
+Bashkirian,Bashkirian,Bash-l,Bashkirian
+Serpukhovian,Serpukhovian,Serp,Serpukhovian
+Serpukhovian,Serpukhovian,Serp-u,Serpukhovian
+Serpukhovian,Serpukhovian,Serp-l,Serpukhovian
+Tournaisian,Serpukhovian,Ms,Mississippian
+Tournaisian,Serpukhovian,C-l,Lower Carboniferous
+Visean,Visean,Vise,Visean
+Visean,Visean,Vise-u,Visean
+Visean,Visean,Vise-l,Visean
+Tournaisian,Tournaisian,Tour,Tournaisian
+Tournaisian,Tournaisian,Tour-u,Tournaisian
+Tournaisian,Tournaisian,Tour-l,Tournaisian
+Lochkovian,Famennian,D,Devonian
+Frasnian,Famennian,D-u,Upper Devonian
+Famennian,Famennian,Fame,Famennian
+Famennian,Famennian,Fame-u,Famennian
+Famennian,Famennian,Fame-m,Famennian
+Famennian,Famennian,Fame-l,Famennian
+Frasnian,Frasnian,Fras,Frasnian
+Frasnian,Frasnian,Fras-u,Frasnian
+Frasnian,Frasnian,Fras-m,Frasnian
+Frasnian,Frasnian,Fras-l,Frasnian
+Eifelian,Givetian,D-m,Middle Devonian
+Givetian,Givetian,Give,Givetian
+Givetian,Givetian,Give-u,Givetian
+Givetian,Givetian,Give-l,Givetian
+Eifelian,Eifelian,Eife,Eifelian
+Eifelian,Eifelian,Eife-u,Eifelian
+Eifelian,Eifelian,Eife-l,Eifelian
+Lochkovian,Emsian,D-l,Lower Devonian
+Emsian,Emsian,Emsi,Emsian
+Emsian,Emsian,Emsi-u,Emsian
+Emsian,Emsian,Emsi-l,Emsian
+Pragian,Pragian,Sieg,Siegenian
+Pragian,Pragian,Sieg-u,Siegenian
+Pragian,Pragian,Sieg-l,Siegenian
+Lochkovian,Lochkovian,Gedi,Gedinnian
+Lochkovian,Lochkovian,Gedi-u,Gedinnian
+Lochkovian,Lochkovian,Gedi-l,Gedinnian
+Rhuddanian,Pridoli,S,Silurian
+Gorstian,Pridoli,S-u,Upper Silurian
+Pridoli,Pridoli,Prid,Pridolian
+Pridoli,Pridoli,Prid-l,Pridolian
+Ludfordian,Gorstian,Ludl,Ludlovian
+Ludfordian,Ludfordian,Ludl-u,Ludlovian
+Gorstian,Gorstian,Ludl-l,Ludlovian
+Sheinwoodian,Homerian,S-m,Middle Silurian
+Homerian,Sheinwoodian,Wenl,Wenlockian
+Homerian,Homerian,Wenl-u,Wenlockian
+Sheinwoodian,Sheinwoodian,Wenl-l,Wenlockian
+Rhuddanian,Telychian,S-l,Lower Silurian
+Rhuddanian,Telychian,Ldov,Llandoverian
+Telychian,Telychian,Ldov-u,Llandoverian
+Aeronian,Aeronian,Ldov-m,Llandoverian
+Rhuddanian,Rhuddanian,Ldov-l,Llandoverian
+Tremadocian,Hirnantian,O,Ordovician
+Sandbian,Hirnantian,O-u,Upper Ordovician
+Katian,Hirnantian,Ashg,Ashgillian
+Hirnantian,Hirnantian,Ashg-u,Hirnantian
+Katian,Katian,Ashg-m,Cautleyan/Rawtheyan
+Katian,Katian,Ashg-l,Pushgillian
+Dapingian,Darriwilian,O-m,Middle Ordovician
+Sandbian,Sandbian,Cara,Caradocian
+Sandbian,Sandbian,Cara-u,Caradocian
+Sandbian,Sandbian,Cara-m,Caradocian
+Sandbian,Sandbian,Cara-l,Caradocian
+Darriwilian,Darriwilian,Llde,Llandeilian
+Darriwilian,Darriwilian,Llde-u,Llandeilian
+Darriwilian,Darriwilian,Llde-l,Llandeilian
+Darriwilian,Dapingian,Llvi,Llanvirnian
+Darriwilian,Dapingian,Llvi-u,Llanvirnian
+Darriwilian,Dapingian,Llvi-l,Llanvirnian
+Tremadocian,Floian,O-l,Lower Ordivician
+Floian,Floian,Aren,Arengian
+Floian,Floian,Aren-u,Arengian
+Floian,Floian,Aren-l,Arengian
+Tremadocian,Tremadocian,Trem,Tremadocian
+Tremadocian,Tremadocian,Trem-u,Tremadocian
+Tremadocian,Tremadocian,Trem-l,Tremadocian
+Fortunian,Stage 10,Cm,Cambrian
+Paibian,Stage 10,Cm-u,Upper Cambrian
+Jiangshanian,Stage 10,Trep,Trempealeauan
+Stage 10,Stage 10,Trep-u,Trempealeauan
+Jiangshanian,Jiangshanian,Trep-l,Trempealeauan
+Paibian,Paibian,Fran,Franconian
+Paibian,Paibian,Fran-u,Franconian
+Paibian,Paibian,Fran-l,Franconian
+Paibian,Paibian,Dres,Dresbachian
+Paibian,Paibian,Dres-u,Dresbachian
+Paibian,Paibian,Dres-l,Dresbachian
+Wuliuan,Guzhangian,Cm-m,Middle Cambrian
+Guzhangian,Guzhangian,Cm-uMid,upper Middle Cambrian
+Guzhangian,Guzhangian,Cm-uMid-u,upper upper Middle Cambrian
+Guzhangian,Guzhangian,Cm-uMid-m,upper middle Middle Cambrian
+Guzhangian,Guzhangian,Cm-uMid-l,lower upper Middle Cambrian
+Drumian,Drumian,Cm-mMid,middle Middle Cambrian
+Drumian,Drumian,Cm-mMid-u,upper middle Middle Cambrian
+Drumian,Drumian,Cm-mMid-m,middle middle Middle Cambrian
+Drumian,Drumian,Cm-mMid-l,lower middle Middle Cambrian
+Guzhangian,Guzhangian,Cm-Mid-u,upper Middle Cambrian
+Wuliuan,Wuliuan,Cm-lMid,lower Middle Cambrian
+Wuliuan,Wuliuan,Cm-lMid-u,upper lower Middle Cambrian
+Wuliuan,Wuliuan,Cm-lMid-l,lower lower Middle Cambrian
+Fortunian,Stage 4,Cm-l,Lower Cambrian
+Stage 4,Stage 3,Tojo,Tojonian
+Stage 4,Stage 3,Tojo-u,Upper Tojonian
+Stage 4,Stage 3,Tojo-l,Lower Tojonian
+Stage 3,Stage 2,Boto,Botomian
+Stage 3,Stage 2,Boto-u,Botomian
+Stage 3,Stage 2,Boto-l,Botomian
+Stage 2,Stage 2,Atda,Atdabanian
+Stage 2,Stage 2,Atda-u,Atdabanian
+Stage 2,Stage 2,Atda-l,Atdabanian
+Fortunian,Fortunian,Tomm,Tommotian
+Fortunian,Fortunian,Tomm-u,Tommotian
+Fortunian,Fortunian,Tomm-l,Tommotian
+Ediacaran,Ediacaran,V,Vendian
+Ediacaran,Ediacaran,V-u,Upper Vendian
+Ediacaran,Ediacaran,N-Da,Nemakit-Daldyn
+Ediacaran,Ediacaran,N-Da-u,Nemakit-Daldyn
+Ediacaran,Ediacaran,N-Da-l,Nemakit-Daldyn
