@@ -57,7 +57,31 @@
 sepkoski_curve <- function(title = NULL, height = 0.05, cols = NULL,
                   int_lab = TRUE, int_size = 1, fill = FALSE,
                   legend = TRUE, legend_size = 1) {
-
+  # Error handling
+  if (!is.character(title) && !is.null(title)) {
+    stop("`title` must be character (or NULL)")
+  }
+  if (!is.numeric(height)) {
+    stop("`height` must be numeric")
+  }
+  if (!is.null(cols) && !character(cols)) {
+    stop("`cols` must be character (or NULL)")
+  }
+  if (!is.logical(int_lab)) {
+    stop("`int_lab` must be logical")
+  }
+  if (!is.numeric(int_size)) {
+    stop("`int_size` must be numeric")
+  }
+  if (!is.logical(fill)) {
+    stop("`fill` must be logical")
+  }
+  if (!is.logical(legend)) {
+    stop("`legend` must be logical")
+  }
+  if (!is.numeric(legend_size)) {
+    stop("`legend_size` must be numeric")
+  }
   # Base plot
   plot(x = stages$mid_ma,
        y = stages$total_counts,
