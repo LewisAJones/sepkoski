@@ -33,7 +33,7 @@ This version of the dataset was pulled from Shanan Peters' \href{http://strata.g
 taxonomic names. However, first and last appearance intervals have been
 updated to \href{https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf}{International Geological Time Scale 2022} stages. In
 updating interval names, some interpretation was required. The
-\code{interval_table} dataset documents the linked interval names.
+\link[sepkoski]{interval_table} dataset documents the linked interval names.
 }
 \section{References}{
 

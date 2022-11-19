@@ -9,7 +9,7 @@
 #' updated to [International Geological Time Scale 2022](
 #' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf) stages. In
 #' updating interval names, some interpretation was required. The
-#' \code{interval_table} dataset documents the linked interval names.
+#' \link[sepkoski]{interval_table} dataset documents the linked interval names.
 #'
 #' @format A \code{data.frame} with 35826 rows and 9 variables:
 #' \describe{

@@ -3,7 +3,6 @@
 \docType{package}
 \name{sepkoski-package}
 \alias{sepkoski-package}
-\alias{_PACKAGE}
 \title{sepkoski: Sepkoski's Fossil Marine Animal Genera Compendium}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}

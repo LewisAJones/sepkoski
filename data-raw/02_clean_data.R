@@ -193,16 +193,18 @@ for (i in 1:nrow(periods)) {
 df$fauna <- NA
 cambrian <- c("Trilobita",
               "Polychaeta",
-              "Monoplacophora",
+              "Tergomya", # Monoplacophora
               "Inarticulata",
-              "Hyolitha")
+              "Hyolithomorpha", # Hyolitha
+              "Eocrinoidea")
+
 
 paleozoic <- c("Anthozoa",
                "Articulata",
+               "Asteroidea",
                "Cephalopoda",
                "Crinoidea",
                "Ostracoda",
-               "Stelleroidea",
                "Stenolaemata")
 
 modern <- c("Bivalvia",

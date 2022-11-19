@@ -42,20 +42,41 @@ No return value. Function is used to plot Sepkoski's curve with
 user-defined arguments.
 }
 \description{
-This function plots Sepkoski's evolutionary fauna as defined in Sepkoski
-(1981). The dataset used for plotting is the Sepkoski (2002) fossil marine
+This function plots Sepkoski's evolutionary fauna (Sepkoski, 1981).
+The dataset used for plotting is the Sepkoski (2002) fossil marine
 animal genera compendium (the included \link[sepkoski]{sepkoski} dataset).
 No changes have been made to any taxonomic names in this dataset. However,
 first and last appearance intervals have been updated to
 \href{https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf}{International Geological Time Scale 2022} stages. As
 such, minor differences may be observed to previously published plots.
 }
+\details{
+Taxa are assigned to evolutionary fauna (EF) categories as follows:
+\itemize{
+\item Cambrian EF: Trilobita, Polychaeta, Tergomya ('Monoplacophora'),
+Inarticulata, Hyolithomorpha, and Eocrinoidea.
+\item Paleozoic EF: Anthozoa, Asteroidea, Cephalopoda, Crinoidea, Ostracoda, and
+Stenolaemata.
+\item Modern EF: Bivalvia, Chondrichthyes, Demospongia, Echinoidea, Gastropoda,
+Gymnolaemata, Malacostraca, and Osteichthyes.
+}
+}
+\section{References}{
+
+Sepkoski, J. J. (1981).  A factor analytic description of the Phanerozoic
+marine fossil record. \emph{Paleobiology}, 7(1), pp. 36--53.
+
+Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
+\emph{Bulletins of American paleontology}, 363, pp. 1--560.
+}
+
 \examples{
 # Plot curve with default arguments
 sepkoski_curve()
 
 # Plot curve with user-defined arguments
 sepkoski_curve(title = "Sepkoski's curve",
+               col = "black",
                fill = TRUE,
                legend = FALSE)
 }
