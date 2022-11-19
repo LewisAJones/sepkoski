@@ -1,5 +1,44 @@
-curve <- function(title = NULL, height = 0.05, cols = NULL,
-                  int_lab = TRUE, fill = FALSE,
+#' Plot Sepkoski's evolutionary fauna
+#'
+#' This function plots Sepkoski's evolutionary fauna as defined in Sepkoski
+#' (1981). The dataset used for plotting is the Sepkoski (2002) fossil marine
+#' animal genera compendium (the included \link[sepkoski]{sepkoski} dataset).
+#' No changes have been made to any taxonomic names in this dataset. However,
+#' first and last appearance intervals have been updated to
+#' [International Geological Time Scale 2022](
+#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf) stages. As
+#' such, minor differences may be observed to previously published plots.
+#'
+#' @param title \code{character}. Title of the plot. Defaults to \code{NULL}.
+#' @param height \code{numeric}. Height of the Geological Time Scale relative
+#' to the plot area. Defaults to 0.05.
+#' @param cols \code{character}. The colours of the polygons in the plot area.
+#' @param int_lab \code{logical}. Should interval labels be added? Defaults to
+#' TRUE.
+#' @param int_size \code{numeric}. The size of the interval labels. Defaults to
+#' 1.
+#' @param fill \code{logical}. Should interval boxes be plotted with the ICS
+#' colour scheme? Defaults to \code{FALSE}.
+#' @param legend \code{logical}. Should a legend be added to the plot? Defaults
+#' to \code{TRUE}.
+#' @param legend_size \code{numeric}. The size of the legend. Defaults to 1.
+#'
+#' @return No return value. Function is used to plot Sepkoski's curve with
+#' user-defined arguments.
+#'
+#' @importFrom graphics polygon axis par text
+#'
+#' @examples
+#' # Plot curve with default arguments
+#' sepkoski_curve()
+#'
+#' # Plot curve with user-defined arguments
+#' sepkoski_curve(title = "Sepkoski's curve",
+#'                fill = TRUE,
+#'                legend = FALSE)
+#' @export
+sepkoski_curve <- function(title = NULL, height = 0.05, cols = NULL,
+                  int_lab = TRUE, int_size = 1, fill = FALSE,
                   legend = TRUE, legend_size = 1) {
 
   # Base plot
@@ -36,12 +75,15 @@ curve <- function(title = NULL, height = 0.05, cols = NULL,
           col = cols[1])
   # Modern
   polygon(x = c(stages$mid_ma, rev(stages$mid_ma)),
-          y = c((stages$modern_counts + stages$paleozoic_counts + stages$cambrian_counts),
+          y = c((stages$modern_counts +
+                 stages$paleozoic_counts +
+                 stages$cambrian_counts),
                 rev(stages$base)),
           col = cols[2])
   # Paleozoic
   polygon(x = c(stages$mid_ma, rev(stages$mid_ma)),
-          y = c((stages$paleozoic_counts + stages$cambrian_counts),
+          y = c((stages$paleozoic_counts +
+                 stages$cambrian_counts),
                 rev(stages$base)),
           col = cols[3])
   # Cambrian
@@ -59,7 +101,10 @@ curve <- function(title = NULL, height = 0.05, cols = NULL,
 
   # Add polygons to bottom of plot
   for (i in seq_len(nrow(periods))) {
-    polygon(x = c(periods$min_ma[i], periods$min_ma[i], periods$max_ma[i], periods$max_ma[i]),
+    polygon(x = c(periods$min_ma[i],
+                  periods$min_ma[i],
+                  periods$max_ma[i],
+                  periods$max_ma[i]),
             y = rep(c(0, height, height, 0)),
             col = periods$colour[i],
             lty = 1,
@@ -68,6 +113,7 @@ curve <- function(title = NULL, height = 0.05, cols = NULL,
     text(x = periods$mid_ma,
          y = height / 2,
          labels = periods$abbrev,
+         cex = int_size,
          xpd = TRUE)
   }
   # Add text
@@ -77,6 +123,3 @@ curve <- function(title = NULL, height = 0.05, cols = NULL,
          col = cols, pch = 15, cex = legend_size, bty = "n")
   }
 }
-curve(title = "test", height = 0.05, cols = NULL, int_lab = TRUE, fill = FALSE,
-      legend = TRUE, legend_size = 1)
-curve()

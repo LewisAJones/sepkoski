@@ -11,17 +11,18 @@
 #' updating interval names, some interpretation was required. The
 #' \code{interval_table} dataset documents the linked interval names.
 #'
-#' @format A \code{data.frame} with 35826 rows and 8 variables:
+#' @format A \code{data.frame} with 35826 rows and 9 variables:
 #' \describe{
 #'   \item{phylum}{A character denoting the phylum of the taxon.}
 #'   \item{class}{A character denoting the class of the taxon.}
 #'   \item{order}{A character denoting the order of the taxon.}
 #'   \item{genus}{A character denoting the genus of the taxon.}
-#'   \item{fauna}{A character denoting the great evolutionary fauna class of the taxon.}
+#'   \item{fauna}{A character denoting the great evolutionary fauna class of
+#'   the taxon.}
 #'   \item{interval_max}{A character denoting the interval of first occurrence.}
 #'   \item{interval_min}{A character denoting the interval of last occurrence.}
-#'   \item{max_ma}{A numeric denoting the age of first occurrence.}
-#'   \item{min_ma}{A numeric denoting the age of last occurrence.}
+#'   \item{max_ma}{A numeric denoting the interval age of first occurrence.}
+#'   \item{min_ma}{A numeric denoting the interval age of last occurrence.}
 #' }
 #' @section References:
 #' Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
@@ -39,7 +40,7 @@
 #' http://strata.geology.wisc.edu/jack/). No changes have been made to any
 #' taxonomic names or first and last appearance data. The definitions of
 #' stage/period abbreviations are provided in Sepkoski (2002), or can be
-#' accessed via the included \code{interval_table} for convenience.
+#' accessed via the included \link[sepkoski]{interval_table} for convenience.
 #'
 #' @format A \code{data.frame} with 35826 rows and 8 variables:
 #' \describe{

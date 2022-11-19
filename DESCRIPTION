@@ -10,13 +10,13 @@ Description: Stratigraphic ranges of fossil marine animal genera from Sepkoski's
     (2002) published compendium. This version of the dataset is a port of
     Shanan Peter's online database (<http://strata.geology.wisc.edu/jack/>). No
     changes have been made to any taxonomic names. However, first and last
-    appearance intervals have been updated to be consistent with the
+    appearance intervals have been updated to be consistent with stages of the
     International Geological Timescale 2022.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Depends: 
-    R (>= 2.10)
+    R (>= 3.5.0)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 url: https://github.com/LewisAJones/sepkoski

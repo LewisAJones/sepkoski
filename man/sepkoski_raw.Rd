@@ -30,7 +30,7 @@ published compendium of fossil marine animal genera.
 This version of the dataset was pulled from Shanan Peters' \href{http://strata.geology.wisc.edu/jack/}{online database}. No changes have been made to any
 taxonomic names or first and last appearance data. The definitions of
 stage/period abbreviations are provided in Sepkoski (2002), or can be
-accessed via the included \code{interval_table} for convenience.
+accessed via the included \link[sepkoski]{interval_table} for convenience.
 }
 \section{References}{
 

@@ -5,16 +5,18 @@
 \alias{sepkoski}
 \title{Sepkoski's fossil marine animal genera compendium}
 \format{
-A \code{data.frame} with 35826 rows and 8 variables:
+A \code{data.frame} with 35826 rows and 9 variables:
 \describe{
 \item{phylum}{A character denoting the phylum of the taxon.}
 \item{class}{A character denoting the class of the taxon.}
 \item{order}{A character denoting the order of the taxon.}
 \item{genus}{A character denoting the genus of the taxon.}
+\item{fauna}{A character denoting the great evolutionary fauna class of
+the taxon.}
 \item{interval_max}{A character denoting the interval of first occurrence.}
 \item{interval_min}{A character denoting the interval of last occurrence.}
-\item{max_ma}{A numeric denoting the age of first occurrence.}
-\item{min_ma}{A numeric denoting the age of last occurrence.}
+\item{max_ma}{A numeric denoting the interval age of first occurrence.}
+\item{min_ma}{A numeric denoting the interval age of last occurrence.}
 }
 }
 \source{
