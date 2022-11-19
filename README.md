@@ -2,6 +2,7 @@
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/LewisAJones/sepkoski/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/LewisAJones/sepkoski/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/LewisAJones/sepkoski/branch/main/graph/badge.svg)](https://app.codecov.io/gh/LewisAJones/sepkoski?branch=main)
 <!-- badges: end -->
 
 `sepkoski` is a data R package of Sepkoski's fossil marine animal genera compendium (Sepkoski, 2002).
