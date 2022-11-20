@@ -13,16 +13,17 @@ The aim of `sepkoski` is to provide a light and easily-accessible solution to Se
 
 - Sepkoski's raw fossil marine animal genera compendium
 - Sepkoski's compendium with first and last appearance intervals updated to be consistent with international stages from the Geological Time Scale 2022
-- An interval table linking intervals in Sepkoski's fossil marine animal genera compendium with the International Geological Time Scale 2022.
+- An interval table linking intervals in Sepkoski's compendium with the International Geological Time Scale 2022.
 - A function for plotting Sepkoski's evolutionary fauna for easy reproduction in presentations, articles, etc.
 
-*In updating interval names, some interpretation was required. The `interval_table` dataset documents the linked interval names. If you notice any issue, or disagree with any of these assignments, please feel free to raise a GitHub issue, and I will do my best to address them as soon as possible.*
+Note: In updating interval names, some interpretation was required. The `interval_table` dataset documents the linked interval names. If you notice any issue, or disagree with any of these assignments, please feel free to raise a GitHub issue, and I will do my best to address them as soon as possible.
 
 ## Installation
 
 The development version of `sepkoski` can be installed via GitHub using:
 
 ```r
+# Install development version of the package
 devtools::install_github("LewisAJones/sepkoski")
 ```
 
@@ -33,22 +34,19 @@ devtools::install_github("LewisAJones/sepkoski")
 library(sepkoski)
 ```
 
-Datasets in `sepkoski` can easily be accessed via:
+The datasets in `sepkoski` can be easily accessed via:
 
 ```r
 # Load datasets
-
 # Raw dataset
 data("sepkoski_raw")
-
 # Updated interval dataset
 data("sepkoski")
-
 # Interval table
 data("interval_table")
 ```
 
-The only function in the `sepkoski` package at this time is the `sepkoski_curve()`. This can be used to plot Sepkoski's evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. You can provide your own values to the arguments to customise the appearance, or simply use the default arguments:
+The only function in the `sepkoski` package at this time is `sepkoski_curve()`. This can be used to plot Sepkoski's evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. Users can provide their own values to function arguments to customise the appearance, or simply use the default arguments:
 
 ```r
 sepkoski_curve()
