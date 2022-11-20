@@ -1,11 +1,10 @@
 #' Plot Sepkoski's evolutionary fauna
 #'
-#' This function plots Sepkoski's evolutionary fauna (Sepkoski, 1981).
-#' The dataset used for plotting is the Sepkoski (2002) fossil marine
-#' animal genera compendium (the included \link[sepkoski]{sepkoski} dataset).
-#' No changes have been made to any taxonomic names in this dataset. However,
-#' first and last appearance intervals have been updated to
-#' [International Geological Time Scale 2022](
+#' This function plots Sepkoski's evolutionary fauna (Sepkoski, 1981), using the
+#' Sepkoski (2002) fossil marine animal genera compendium (i.e. the included
+#' \link[sepkoski]{sepkoski} dataset). No changes have been made to any
+#' taxonomic names in this dataset. However, first and last appearance
+#' intervals have been updated to [International Geological Time Scale 2022](
 #' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf) stages. As
 #' such, minor differences may be observed to previously published plots.
 #'

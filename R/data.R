@@ -69,16 +69,14 @@
 #' was generated based on published literature and the [GeoWhen Database](
 #' https://timescalefoundation.org/resources/geowhen/index.html). In the
 #' majority of cases, this was a clear conversion. However, in several cases
-#' reasonable interpretation was required. If you find an issue, or disagree
-#' with any of the assignments, please feel free to raise an issue on GitHub
-#' and I will correct it as soon as possible.
+#' reasonable interpretation was required.
 #'
 #' @format A \code{data.frame} with 302 rows and 4 variables:
 #' \describe{
-#'   \item{interval_max}{A character denoting the oldest International
-#'   Geological Stage.}
-#'   \item{interval_min}{A character denoting the youngest International
-#'   Geological Stage.}
+#'   \item{interval_max}{A character denoting the oldest international
+#'   geological stage.}
+#'   \item{interval_min}{A character denoting the youngest international
+#'   geological stage.}
 #'   \item{code}{A character denoting the original interval abbreviation.}
 #'   \item{original_interval}{A character denoting the original interval.}
 #' }
