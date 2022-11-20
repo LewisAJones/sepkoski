@@ -33,7 +33,22 @@ devtools::install_github("LewisAJones/sepkoski")
 library(sepkoski)
 ```
 
-The only function in the `sepkoski` package at this time is the `sepkoski_curve()`. This can be used to plot Sepkoski's evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. 
+Datasets in `sepkoski` can easily be accessed via:
+
+```r
+# Load datasets
+
+# Raw dataset
+data("sepkoski_raw")
+
+# Updated interval dataset
+data("sepkoski")
+
+# Interval table
+data("interval_table")
+```
+
+The only function in the `sepkoski` package at this time is the `sepkoski_curve()`. This can be used to plot Sepkoski's evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. You can provide your own values to the arguments to customise the appearance, or simply use the default arguments:
 
 ```r
 sepkoski_curve()
