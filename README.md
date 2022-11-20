@@ -9,7 +9,7 @@
 
 `sepkoski` is a data R package of Sepkoski's fossil marine animal genera compendium (Sepkoski, 2002).
 
-The aim of `sepkoski` is to provide a light and easily-accessible solution to Sepkoski's compendium to support teaching exercises. The package provides access to:
+The aim of `sepkoski` is to provide a light and easily-accessible solution to working with Sepkoski's compendium in order to support teaching exercises. The package provides access to:
 
 - Sepkoski's raw fossil marine animal genera compendium (Sepkoski, 2002).
 - Sepkoski's compendium with first and last appearance intervals updated to be consistent with stages from the [International Geological Time Scale 2022](https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf).
