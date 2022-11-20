@@ -149,10 +149,10 @@ sepkoski_curve <- function(title = NULL, height = 0.05, cols = NULL,
             lty = 1,
             lwd = 1,
             xpd = TRUE)
-    text(x = periods$mid_ma,
+    text(x = periods$mid_ma[i],
          y = height / 2,
-         labels = periods$abbrev,
-         cex = int_size,
+         labels = periods$abbrev[i],
+         cex = int_size[i],
          xpd = TRUE)
   }
   # Add text
