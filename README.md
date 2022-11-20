@@ -37,7 +37,6 @@ library(sepkoski)
 The datasets in `sepkoski` can be easily accessed via:
 
 ```r
-# Load datasets
 # Raw dataset
 data("sepkoski_raw")
 # Updated interval dataset
@@ -46,7 +45,7 @@ data("sepkoski")
 data("interval_table")
 ```
 
-The only function in the `sepkoski` package at this time is `sepkoski_curve()`. This can be used to plot Sepkoski's evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. Users can provide their own values to function arguments to customise the appearance, or simply use the default arguments:
+The only function in the `sepkoski` package at this time is `sepkoski_curve()`. This can be used to plot Sepkoski's evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. Users may provide their own values to function arguments to customise the appearance, or simply use the default arguments:
 
 ```r
 sepkoski_curve()
