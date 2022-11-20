@@ -26,5 +26,6 @@ url: https://github.com/LewisAJones/sepkoski
 BugReports: https://github.com/LewisAJones/sepkoski/issues
 Suggests: 
     covr,
+    knitr,
     testthat (>= 3.0.0),
     vdiffr (>= 1.0.0)
