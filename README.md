@@ -11,9 +11,9 @@
 
 The aim of `sepkoski` is to provide a light and easily-accessible solution to Sepkoski's compendium to support teaching exercises. The package provides access to:
 
-- Sepkoski's raw fossil marine animal genera compendium
-- Sepkoski's compendium with first and last appearance intervals updated to be consistent with international stages from the Geological Time Scale 2022
-- An interval table linking intervals in Sepkoski's compendium with the International Geological Time Scale 2022.
+- Sepkoski's raw fossil marine animal genera compendium (Sepkoski, 2002).
+- Sepkoski's compendium with first and last appearance intervals updated to be consistent with stages from the [International Geological Time Scale 2022](https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf).
+- An interval table linking intervals in Sepkoski's compendium with the [International Geological Time Scale 2022](https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf).
 - A function for plotting Sepkoski's evolutionary fauna for easy reproduction in presentations, articles, etc.
 
 Note: In updating interval names, some interpretation was required. The `interval_table` dataset documents the linked interval names. If you notice any issue, or disagree with any of these assignments, please feel free to raise a GitHub issue, and I will do my best to address them as soon as possible.
@@ -52,3 +52,10 @@ The only function in the `sepkoski` package at this time is `sepkoski_curve()`. 
 sepkoski_curve()
 ```
 ![Plot with default arguments](man/figures/example_curve.png)
+
+## References
+
+Sepkoski, J. J. (1981). A factor analytic description of the Phanerozoic marine fossil record. *Paleobiology*, 7(1), pp. 36--53.
+
+Sepkoski, J. J. (2002). A compendium of fossil marine animal genera. *Bulletins of American paleontology*, 363, pp. 1--560.
+
