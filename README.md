@@ -54,7 +54,7 @@ sepkoski_curve()
 
 ## References
 
-Sepkoski, J. J. (1981). A factor analytic description of the Phanerozoic marine fossil record. *Paleobiology*, 7(1), pp. 36-53.
+> Sepkoski, J. J. (1981). A factor analytic description of the Phanerozoic marine fossil record. *Paleobiology*, 7(1), pp. 36-53.
 
-Sepkoski, J. J. (2002). A compendium of fossil marine animal genera. *Bulletins of American paleontology*, 363, pp. 1-560.
+> Sepkoski, J. J. (2002). A compendium of fossil marine animal genera. *Bulletins of American paleontology*, 363, pp. 1-560.
 
