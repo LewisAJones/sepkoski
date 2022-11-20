@@ -27,7 +27,7 @@
 #'
 #' @details Taxa are assigned to evolutionary fauna (EF) categories as follows:
 #'
-#' - Cambrian EF: Trilobita, Polychaeta, Tergomya ('Monoplacophora'),
+#' - Cambrian EF: Trilobita, Polychaeta, Tergomya ("Monoplacophora"),
 #' Inarticulata, Hyolithomorpha, and Eocrinoidea.
 #' - Paleozoic EF: Anthozoa, Asteroidea, Cephalopoda, Crinoidea, Ostracoda, and
 #' Stenolaemata.

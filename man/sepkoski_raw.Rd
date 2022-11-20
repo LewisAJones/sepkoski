@@ -3,7 +3,7 @@
 \docType{data}
 \name{sepkoski_raw}
 \alias{sepkoski_raw}
-\title{Sepkoski's fossil marine animal genera compendium (raw)}
+\title{Sepkoski's marine animal genera compendium (raw)}
 \format{
 A \code{data.frame} with 35826 rows and 8 variables:
 \describe{
@@ -29,8 +29,8 @@ This dataset is a port of \href{https://www.biodiversitylibrary.org/page/2798022
 published compendium of fossil marine animal genera.
 This version of the dataset was pulled from Shanan Peters' \href{http://strata.geology.wisc.edu/jack/}{online database}. No changes have been made to any
 taxonomic names or first and last appearance data. The definitions of
-stage/period abbreviations are provided in Sepkoski (2002), or can be
-accessed via the included \link[sepkoski]{interval_table} for convenience.
+stage/period abbreviations are provided in \href{https://www.biodiversitylibrary.org/page/27980221#page/113/mode/1up}{Sepkoski's (2002)}, or can
+be accessed via the included \link[sepkoski]{interval_table} for convenience.
 }
 \section{References}{
 

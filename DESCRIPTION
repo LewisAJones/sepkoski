@@ -11,7 +11,8 @@ Description: Stratigraphic ranges of fossil marine animal genera from Sepkoski's
     Shanan Peter's online database (<http://strata.geology.wisc.edu/jack/>). No
     changes have been made to any taxonomic names. However, first and last
     appearance intervals have been updated to be consistent with stages of the
-    International Geological Timescale 2022.
+    International Geological Timescale 2022. Functionality for generating a plot
+    of Sepkoski's evolutionary fauna is also included.
 License: GPL (>= 3)
 Language: en-GB
 Encoding: UTF-8

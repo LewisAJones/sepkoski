@@ -52,7 +52,7 @@ such, minor differences may be observed to previously published plots.
 \details{
 Taxa are assigned to evolutionary fauna (EF) categories as follows:
 \itemize{
-\item Cambrian EF: Trilobita, Polychaeta, Tergomya ('Monoplacophora'),
+\item Cambrian EF: Trilobita, Polychaeta, Tergomya ("Monoplacophora"),
 Inarticulata, Hyolithomorpha, and Eocrinoidea.
 \item Paleozoic EF: Anthozoa, Asteroidea, Cephalopoda, Crinoidea, Ostracoda, and
 Stenolaemata.

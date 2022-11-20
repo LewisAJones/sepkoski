@@ -3,7 +3,7 @@
 \docType{data}
 \name{sepkoski}
 \alias{sepkoski}
-\title{Sepkoski's fossil marine animal genera compendium}
+\title{Sepkoski's marine animal genera compendium}
 \format{
 A \code{data.frame} with 35826 rows and 9 variables:
 \describe{

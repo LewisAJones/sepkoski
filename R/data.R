@@ -1,4 +1,4 @@
-#' Sepkoski's fossil marine animal genera compendium
+#' Sepkoski's marine animal genera compendium
 #'
 #' This dataset is a port of [Sepkoski's (2002)](
 #' https://www.biodiversitylibrary.org/page/27980221#page/113/mode/1up)
@@ -31,7 +31,7 @@
 #' \url{http://strata.geology.wisc.edu/jack/}.
 "sepkoski"
 
-#' Sepkoski's fossil marine animal genera compendium (raw)
+#' Sepkoski's marine animal genera compendium (raw)
 #'
 #' This dataset is a port of [Sepkoski's (2002)](
 #' https://www.biodiversitylibrary.org/page/27980221#page/113/mode/1up)
@@ -39,8 +39,9 @@
 #' This version of the dataset was pulled from Shanan Peters' [online database](
 #' http://strata.geology.wisc.edu/jack/). No changes have been made to any
 #' taxonomic names or first and last appearance data. The definitions of
-#' stage/period abbreviations are provided in Sepkoski (2002), or can be
-#' accessed via the included \link[sepkoski]{interval_table} for convenience.
+#' stage/period abbreviations are provided in [Sepkoski's (2002)](
+#' https://www.biodiversitylibrary.org/page/27980221#page/113/mode/1up), or can
+#' be accessed via the included \link[sepkoski]{interval_table} for convenience.
 #'
 #' @format A \code{data.frame} with 35826 rows and 8 variables:
 #' \describe{
