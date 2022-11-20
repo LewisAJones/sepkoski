@@ -1,6 +1,6 @@
 Package: sepkoski
 Title: Sepkoski's Fossil Marine Animal Genera Compendium
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: person(given = "Lewis A.",
                   family = "Jones",
                   email = "LewisA.Jones@outlook.com",
@@ -13,6 +13,7 @@ Description: Stratigraphic ranges of fossil marine animal genera from Sepkoski's
     appearance intervals have been updated to be consistent with stages of the
     International Geological Timescale 2022.
 License: GPL (>= 3)
+Language: en-GB
 Encoding: UTF-8
 LazyData: true
 Depends: 
@@ -25,4 +26,5 @@ Suggests:
     covr,
     testthat (>= 3.0.0),
     vdiffr (>= 1.0.0)
+VignetteBuilder: knitr
 Config/testthat/edition: 3
