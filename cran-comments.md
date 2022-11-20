@@ -10,7 +10,10 @@ Ubuntu-devel 20.04.5 (x86_64-pc-linux-gnu): r83369
 Ubuntu-oldrel 20.04.5 (x86_64-pc-linux-gnu): R 4.1.3
 
 ## R CMD check results
-There were no ERRORs, WARNINGs or NOTEs.
+There were no ERRORs or WARNINGs.
+
+There is 1 NOTE:
+- New submission
 
 ## Downstream dependencies
 There are currently no downstream dependencies for this package.
