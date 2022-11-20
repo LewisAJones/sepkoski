@@ -1,11 +1,11 @@
 test_that("sepkoski_curve() works", {
-  expect_doppelganger("sepkoski_curve()", function() {
+  vdiffr::expect_doppelganger("sepkoski_curve()", function() {
     sepkoski_curve()
   })
 })
 
 test_that("sepkoski_curve() works with custom arguments", {
-  expect_doppelganger("sepkoski_curve() with custom arguments", function() {
+  vdiffr::expect_doppelganger("sepkoski_curve() with custom arguments", function() {
     sepkoski_curve(title = "Sepkoski's Compendium",
                    height = 0.1,
                    cols = "black",

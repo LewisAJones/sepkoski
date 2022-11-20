@@ -23,5 +23,6 @@ url: https://github.com/LewisAJones/sepkoski
 BugReports: https://github.com/LewisAJones/sepkoski/issues
 Suggests: 
     covr,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    vdiffr (>= 1.0.0)
 Config/testthat/edition: 3

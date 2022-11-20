@@ -64,7 +64,7 @@ sepkoski_curve <- function(title = NULL, height = 0.05, cols = NULL,
   if (!is.numeric(height)) {
     stop("`height` must be numeric")
   }
-  if (!is.null(cols) && !character(cols)) {
+  if (!is.null(cols) && !is.character(cols)) {
     stop("`cols` must be character (or NULL)")
   }
   if (!is.logical(int_lab)) {
