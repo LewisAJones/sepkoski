@@ -1,8 +1,5 @@
-# sepkoski v.1.0.0
-
-- Initial submission to CRAN (2022-11-21)
-
-# sepkoski v.0.0.1
+# sepkoski 0.0.1
+Initial submission to CRAN (2022-11-21).
 
 First full release. Provides a light and easily-accessible solution to working with Sepkoski's compendium.
 
