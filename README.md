@@ -7,7 +7,7 @@
 
 ## Overview
 
-`sepkoski` is a data R package of Sepkoski's fossil marine animal genera compendium (Sepkoski, 2002).
+`sepkoski` is a data R package of Sepkoski's fossil marine animal genera compendium (Sepkoski, 2002), ported from Shanan Peter's [online database](http://strata.geology.wisc.edu/jack/).
 
 The aim of `sepkoski` is to provide a light and easily-accessible solution to working with Sepkoski's compendium to support teaching exercises. The package provides access to:
 
@@ -57,4 +57,6 @@ sepkoski_curve()
 > Sepkoski, J. J. (1981). A factor analytic description of the Phanerozoic marine fossil record. *Paleobiology*, 7(1), pp. 36-53.
 
 > Sepkoski, J. J. (2002). A compendium of fossil marine animal genera. *Bulletins of American paleontology*, 363, pp. 1-560.
+
+> Peters, S. (2022). [Sepkoski's Online Genus Database](http://strata.geology.wisc.edu/jack/). 
 
