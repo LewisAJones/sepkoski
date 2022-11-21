@@ -7,7 +7,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Stratigraphic ranges of fossil marine animal genera from Sepkoski's (2002) published compendium. This version of the dataset is a port of Shanan Peter's online database (\url{http://strata.geology.wisc.edu/jack/}). No changes have been made to any taxonomic names. However, first and last appearance intervals have been updated to be consistent with stages of the International Geological Timescale 2022. Functionality for generating a plot of Sepkoski's evolutionary fauna is also included.
+Stratigraphic ranges of fossil marine animal genera from Sepkoski's (2002) published compendium. No changes have been made to any taxonomic names. However, first and last appearance intervals have been updated to be consistent with stages of the International Geological Timescale. Functionality for generating a plot of Sepkoski's evolutionary fauna is also included.
 }
 \seealso{
 Useful links:

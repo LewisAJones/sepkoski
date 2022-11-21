@@ -11,7 +11,7 @@ A \code{data.frame} with 35826 rows and 9 variables:
 \item{class}{A character denoting the class of the taxon.}
 \item{order}{A character denoting the order of the taxon.}
 \item{genus}{A character denoting the genus of the taxon.}
-\item{fauna}{A character denoting the great evolutionary fauna class of
+\item{fauna}{A character denoting the great evolutionary fauna type of
 the taxon.}
 \item{interval_max}{A character denoting the interval of first occurrence.}
 \item{interval_min}{A character denoting the interval of last occurrence.}
@@ -31,7 +31,7 @@ This dataset is a port of \href{https://www.biodiversitylibrary.org/page/2798022
 published compendium of fossil marine animal genera.
 This version of the dataset was pulled from Shanan Peters' \href{http://strata.geology.wisc.edu/jack/}{online database}. No changes have been made to any
 taxonomic names. However, first and last appearance intervals have been
-updated to \href{https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf}{International Geological Time Scale 2022} stages. In
+updated to stages from the \href{https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf}{International Geological Time Scale 2022}. In
 updating interval names, some interpretation was required. The
 \link[sepkoski]{interval_table} dataset documents the linked interval names.
 }

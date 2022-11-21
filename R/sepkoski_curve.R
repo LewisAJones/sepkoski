@@ -4,8 +4,9 @@
 #' Sepkoski (2002) fossil marine animal genera compendium (i.e. the included
 #' \link[sepkoski]{sepkoski} dataset). No changes have been made to any
 #' taxonomic names in this dataset. However, first and last appearance
-#' intervals have been updated to [International Geological Time Scale 2022](
-#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf) stages. As
+#' intervals have been updated to stages from the
+#' [International Geological Time Scale 2022](
+#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf). As
 #' such, minor differences may be observed to previously published plots.
 #'
 #' @param title \code{character}. Title of the plot. Defaults to \code{NULL}.

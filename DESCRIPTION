@@ -7,12 +7,11 @@ Authors@R: person(given = "Lewis A.",
                   role = c("aut", "cre"),
                   comment = c(ORCID = "0000-0003-3902-8986"))
 Description: Stratigraphic ranges of fossil marine animal genera from Sepkoski's
-    (2002) published compendium. This version of the dataset is a port of
-    Shanan Peter's online database (<http://strata.geology.wisc.edu/jack/>). No
-    changes have been made to any taxonomic names. However, first and last
-    appearance intervals have been updated to be consistent with stages of the
-    International Geological Timescale 2022. Functionality for generating a plot
-    of Sepkoski's evolutionary fauna is also included.
+    (2002) published compendium. No changes have been made to any taxonomic 
+    names. However, first and last appearance intervals have been updated to be
+    consistent with stages of the International Geological Timescale. 
+    Functionality for generating a plot of Sepkoski's evolutionary fauna is also
+    included.
 License: GPL (>= 3)
 Language: en-GB
 Encoding: UTF-8
