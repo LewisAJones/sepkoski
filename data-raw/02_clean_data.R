@@ -195,17 +195,18 @@ cambrian <- c("Trilobita",
               "Polychaeta",
               "Tergomya", # Monoplacophora
               "Inarticulata",
-              "Hyolithomorpha", # Hyolitha
-              "Eocrinoidea")
+              "Hyolithomorpha") # Hyolitha
 
 
 paleozoic <- c("Anthozoa",
                "Articulata",
-               "Asteroidea",
+               "Asteroidea", # Stelleroidea
                "Cephalopoda",
                "Crinoidea",
                "Ostracoda",
-               "Stenolaemata")
+               "Ophiuroidea", # Stelleroidea
+               "Stenolaemata",
+               "Somasteroidea") # Stelleroidea
 
 modern <- c("Bivalvia",
             "Chondrichthyes",

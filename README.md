@@ -7,7 +7,7 @@
 
 ## Overview
 
-`sepkoski` is a data R package of Sepkoski's fossil marine animal genera compendium (Sepkoski, 2002), ported from Shanan Peter's [online database](http://strata.geology.wisc.edu/jack/).
+`sepkoski` is a data R package of Sepkoski's fossil marine animal genera compendium (Sepkoski, 2002), ported from Shanan Peters' [online database](http://strata.geology.wisc.edu/jack/).
 
 The aim of `sepkoski` is to provide a light and easily-accessible solution to working with Sepkoski's compendium to support teaching exercises. The package provides access to:
 
