@@ -1,0 +1,13 @@
+citHeader("To cite sepkoski in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "sepkoski: Sepkoski's Fossil Marine Animal Genera Compendium",
+  author   = as.person("Lewis A. Jones"),
+  year     = "2022",
+  note     = "R Package version 0.0.1",
+  url      = "https://github.com/LewisAJones/sepkoski/",
+  textVersion = paste(
+  "Jones L.A. (2022). sepkoski: Sepkoski's Fossil Marine Animal Genera Compendium. R package version 0.0.1. https://github.com/LewisAJones/sepkoski/."
+  )
+)
