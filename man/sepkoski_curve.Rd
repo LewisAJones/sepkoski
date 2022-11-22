@@ -67,7 +67,7 @@ Sepkoski, J. J. (1981).  A factor analytic description of the Phanerozoic
 marine fossil record. \emph{Paleobiology}, 7(1), pp. 36--53.
 
 Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
-\emph{Bulletins of American paleontology}, 363, pp. 1--560.
+\emph{Bulletins of American Paleontology}, 363, pp. 1--560.
 }
 
 \examples{

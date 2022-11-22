@@ -26,7 +26,7 @@
 #' }
 #' @section References:
 #' Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
-#' *Bulletins of American paleontology*, 363, pp. 1--560.
+#' *Bulletins of American Paleontology*, 363, pp. 1--560.
 #' @source {Shanan Peter's 'Sepkoski's Online Genus Database':}
 #' \url{http://strata.geology.wisc.edu/jack/}.
 "sepkoski"
@@ -56,7 +56,7 @@
 #' }
 #' @section References:
 #' Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
-#' *Bulletins of American paleontology*, 363, pp. 1--560.
+#' *Bulletins of American Paleontology*, 363, pp. 1--560.
 #' @source {Shanan Peter's 'Sepkoski's Online Genus Database':}
 #' \url{http://strata.geology.wisc.edu/jack/}.
 "sepkoski_raw"

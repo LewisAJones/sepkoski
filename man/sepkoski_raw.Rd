@@ -35,7 +35,7 @@ be accessed via the included \link[sepkoski]{interval_table} for convenience.
 \section{References}{
 
 Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
-\emph{Bulletins of American paleontology}, 363, pp. 1--560.
+\emph{Bulletins of American Paleontology}, 363, pp. 1--560.
 }
 
 \keyword{datasets}

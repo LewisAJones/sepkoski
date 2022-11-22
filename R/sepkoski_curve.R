@@ -40,7 +40,7 @@
 #' marine fossil record. *Paleobiology*, 7(1), pp. 36--53.
 #'
 #' Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
-#' *Bulletins of American paleontology*, 363, pp. 1--560.
+#' *Bulletins of American Paleontology*, 363, pp. 1--560.
 #'
 #' @importFrom graphics polygon axis par text
 #'
