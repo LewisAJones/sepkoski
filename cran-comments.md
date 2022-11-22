@@ -4,8 +4,7 @@ authors (year) <doi:...>
 authors (year) <arXiv:...>
 authors (year, ISBN:...)
 or if those are not available: authors (year) <https:...>
-with no space after 'doi:', 'arXiv:', 'https:' and angle brackets for auto-linking. (If you want to add a title as well please put it in quotes: "Title")
-
+with no space after 'doi:', 'arXiv:', 'https:' and angle brackets for auto-linking. (If you want to add a title as well please put it in quotes: "Title").
 **I have now provided the full reference available for the Sepkoski (2002) reference in the DESCRIPTION. Other references are provided within function documentation where relevant. These references serve only to provide additional information to users, and conforms with other packages such as 'chronosphere', 'divDyn' and 'fossilbrush'.**
 
 # Test environments (with Github Actions)
