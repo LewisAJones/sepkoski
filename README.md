@@ -4,6 +4,7 @@
 [![R-CMD-check](https://github.com/LewisAJones/sepkoski/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/LewisAJones/sepkoski/actions/workflows/R-CMD-check.yaml)
 [![Codecov test coverage](https://codecov.io/gh/LewisAJones/sepkoski/branch/main/graph/badge.svg?token=47HS5IX7M1)](https://app.codecov.io/gh/LewisAJones/sepkoski?branch=main)
 [![DOI](https://zenodo.org/badge/564230284.svg)](https://zenodo.org/badge/latestdoi/564230284)
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/LewisAlanJones.svg?style=social&label=Follow%20%40LewisAlanJones)](https://twitter.com/LewisAlanJones)
 <!-- badges: end -->
 
 ## Overview
