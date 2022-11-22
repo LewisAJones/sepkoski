@@ -11,7 +11,10 @@ Description: Stratigraphic ranges of fossil marine animal genera from Sepkoski's
     names. However, first and last appearance intervals have been updated to be
     consistent with stages of the International Geological Timescale. 
     Functionality for generating a plot of Sepkoski's evolutionary fauna is also
-    included.
+    included. For specific details on the compendium see:
+    Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
+    Bulletins of American Paleontology, 363, pp. 1–560 (ISBN 0-87710-450-6).
+    Access: <https://www.biodiversitylibrary.org/item/40634#page/5/mode/1up>.
 License: GPL (>= 3)
 Language: en-GB
 Encoding: UTF-8
