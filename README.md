@@ -24,6 +24,13 @@ Note: In updating interval names, some interpretation was required. The `interva
 
 ## Installation
 
+The stable version of `sepkoski` can be installed via the CRAN using:
+
+```r
+# Install stable version of the package
+install.packages("sepkoski")
+```
+
 The development version of `sepkoski` can be installed via GitHub using:
 
 ```r
