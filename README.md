@@ -62,6 +62,7 @@ The only function in the `sepkoski` package at this time is `sepkoski_curve()`. 
 sepkoski_curve()
 ```
 ![Plot with default arguments](man/figures/example_curve.png)
+Phanerozoic plot of Sepkoski's three great evolutionary fauna. Number of genera are counted per international geological stage bin.
 
 ## References
 
