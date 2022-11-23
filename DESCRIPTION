@@ -1,6 +1,6 @@
 Package: sepkoski
 Title: Sepkoski's Fossil Marine Animal Genera Compendium
-Version: 0.0.1
+Version: 0.0.1.9000
 Authors@R: person(given = "Lewis A.",
                   family = "Jones",
                   email = "LewisA.Jones@outlook.com",
