@@ -1,0 +1,13 @@
+url: https://sepkoski.palaeoverse.org
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+authors:
+  Lewis A. Jones:
+    href: https://www.lewisajones.com
+
+home:
+  links:
+  - text: Twitter
+    href: https://twitter.com/LewisAlanJones
