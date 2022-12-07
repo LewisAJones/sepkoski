@@ -11,3 +11,12 @@ home:
   links:
   - text: Twitter
     href: https://twitter.com/LewisAlanJones
+
+news:
+  releases:
+  - text: "Version 0.0.1"
+    href: https://github.com/LewisAJones/sepkoski/releases/tag/v.0.0.1
+
+navbar:
+  structure:
+    left: [reference, news]
