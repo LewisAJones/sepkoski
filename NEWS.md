@@ -1,3 +1,7 @@
+# sepkoski (development version)
+
+* sepkoski_curve arguments updated to be consistent with base::plot
+
 # sepkoski 0.0.1
 Initial submission to CRAN (2022-11-21).
 

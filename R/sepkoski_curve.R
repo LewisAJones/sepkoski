@@ -1,27 +1,31 @@
 #' Plot Sepkoski's evolutionary fauna
 #'
-#' This function plots Sepkoski's evolutionary fauna (Sepkoski, 1981), using the
-#' Sepkoski (2002) fossil marine animal genera compendium (i.e. the included
-#' \link[sepkoski]{sepkoski} dataset). No changes have been made to any
-#' taxonomic names in this dataset. However, first and last appearance
-#' intervals have been updated to stages from the
-#' [International Geological Time Scale 2022](
-#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf). As
-#' such, minor differences may be observed to previously published plots.
+#' This function plots Sepkoski's evolutionary fauna (Sepkoski, 1981), using
+#' the Sepkoski (2002) fossil marine animal genera compendium (i.e. the
+#' included \link[sepkoski]{sepkoski} dataset). No changes have been made to
+#' any taxonomic names in this dataset. However, first and last appearance
+#' intervals have been updated to stages from the [International Geological
+#' Time Scale 2022](
+#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf). As such,
+#' minor differences may be observed to previously published plots.
 #'
-#' @param title \code{character}. Title of the plot. Defaults to \code{NULL}.
+#' @param main \code{character}. Title of the plot. Defaults to \code{NULL}.
+#' @param xlab \code{character}. Title of x-axis. Defaults to "Time (Ma)".
+#' @param ylab \code{character}. Title of y-axis. Defaults to "Number of
+#'   Genera".
 #' @param height \code{numeric}. Height of the Geological Time Scale relative
-#' to the plot area. Defaults to 0.05.
+#'   to the plot area. Defaults to 0.05.
 #' @param cols \code{character}. The colours of the polygons in the plot area.
 #' @param int_lab \code{logical}. Should interval labels be added? Defaults to
-#' TRUE.
-#' @param int_size \code{numeric}. The size of the interval labels. Defaults to
-#' 1.
+#'   TRUE.
+#' @param int_size \code{numeric}. The size of the interval labels. Defaults
+#'   to 1.
 #' @param fill \code{logical}. Should interval boxes be plotted with the ICS
-#' colour scheme? Defaults to \code{FALSE}.
-#' @param legend \code{logical}. Should a legend be added to the plot? Defaults
-#' to \code{TRUE}.
+#'   colour scheme? Defaults to \code{FALSE}.
+#' @param legend \code{logical}. Should a legend be added to the plot?
+#'   Defaults to \code{TRUE}.
 #' @param legend_size \code{numeric}. The size of the legend. Defaults to 1.
+#' @param ... Additional arguments passed to \link[base]{plot}.
 #'
 #' @return No return value. Function is used to plot Sepkoski's curve with
 #' user-defined arguments.
@@ -49,17 +53,19 @@
 #' sepkoski_curve()
 #'
 #' # Plot curve with user-defined arguments
-#' sepkoski_curve(title = "Sepkoski's curve",
+#' sepkoski_curve(main = "Sepkoski's curve",
 #'                col = "black",
 #'                fill = TRUE,
 #'                legend = FALSE)
 #' @export
-sepkoski_curve <- function(title = NULL, height = 0.05, cols = NULL,
-                  int_lab = TRUE, int_size = 1, fill = FALSE,
-                  legend = TRUE, legend_size = 1) {
+sepkoski_curve <- function(main = NULL, xlab = "Time (Ma)",
+                           ylab = "Number of Genera", height = 0.05,
+                           cols = NULL, int_lab = TRUE, int_size = 1,
+                           fill = FALSE, legend = TRUE, legend_size = 1,
+                           ...) {
   # Error handling
-  if (!is.character(title) && !is.null(title)) {
-    stop("`title` must be character (or NULL)")
+  if (!is.character(main) && !is.null(main)) {
+    stop("`main` must be character (or NULL)")
   }
   if (!is.numeric(height)) {
     stop("`height` must be numeric")
@@ -82,19 +88,20 @@ sepkoski_curve <- function(title = NULL, height = 0.05, cols = NULL,
   if (!is.numeric(legend_size)) {
     stop("`legend_size` must be numeric")
   }
+
   # Base plot
   plot(x = stages$mid_ma,
        y = stages$total_counts,
-       main = title,
-       xlab = "Time (Ma)",
-       ylab = "Number of Genera",
+       main = main,
+       xlab = xlab,
+       ylab = ylab,
        xlim = c(max(stages$max_ma), 0),
        ylim = c(0, max(stages$total_counts)),
        type = "n",
-       col = "blue",
        yaxt = "n",
        xaxt = "n",
-       xaxs = "i")
+       xaxs = "i",
+       ...)
   axis(side = 2, at = seq(0, 6000, 1000))
   axis(side = 1, at = seq(from = 500, to = 0, by = -50))
   # Add polygons

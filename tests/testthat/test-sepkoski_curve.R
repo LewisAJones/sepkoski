@@ -6,7 +6,7 @@ test_that("sepkoski_curve() works", {
 
 test_that("sepkoski_curve() works with custom arguments", {
   vdiffr::expect_doppelganger("sepkoski_curve() with custom arguments", function() {
-    sepkoski_curve(title = "Sepkoski's Compendium",
+    sepkoski_curve(main = "Sepkoski's Compendium",
                    height = 0.1,
                    cols = "black",
                    int_lab = FALSE,
@@ -17,7 +17,7 @@ test_that("sepkoski_curve() works with custom arguments", {
 })
 
 test_that("sepkoski_curve() error handling", {
-  expect_error(sepkoski_curve(title = 1))
+  expect_error(sepkoski_curve(main = 1))
   expect_error(sepkoski_curve(height = "2"))
   expect_error(sepkoski_curve(cols = 1))
   expect_error(sepkoski_curve(cols = TRUE))
