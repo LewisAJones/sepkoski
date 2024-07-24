@@ -2,6 +2,8 @@ url: https://sepkoski.palaeoverse.org
 template:
   bootstrap: 5
   bootswatch: flatly
+  bslib:
+    navbar-padding-y: 8px
 
 authors:
   Lewis A. Jones:
