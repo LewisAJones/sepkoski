@@ -7,11 +7,17 @@
 sepkoski_curve_base(plot_args = NULL, axis_args = NULL, legend_args = NULL)
 }
 \arguments{
-\item{plot_args}{\code{list}.}
+\item{plot_args}{\code{list}. A named list of optional arguments that are
+passed directly to \code{\link[graphics:plot.default]{graphics::plot()}}. If \code{NULL} (default), a default
+list of arguments are used.}
 
-\item{axis_args}{\code{list}.}
+\item{axis_args}{\code{list}. A named list of optional arguments that are
+passed directly to \code{\link[palaeoverse:axis_geo]{palaeoverse::axis_geo()}}. If \code{NULL} (default), a
+default list of arguments are used. If \code{FALSE}, no axis is added.}
 
-\item{legend_args}{\code{list}.}
+\item{legend_args}{\code{list}. A named list of optional arguments that are
+passed directly to \code{\link[graphics:legend]{graphics::legend()}}. If \code{NULL} (default), a default
+list of arguments are used. If \code{FALSE}, no legend is added.}
 }
 \value{
 No return value. Function is used to plot Sepkoski's curve with
@@ -23,7 +29,7 @@ Sepkoski (2002) fossil marine animal genera compendium (i.e. the included
 \link[sepkoski]{sepkoski} dataset). No changes have been made to any
 taxonomic names in this dataset. However, first and last appearance
 intervals have been updated to stages from the
-\href{https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf}{International Geological Time Scale 2022}. As
+\href{https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf}{International Geological Time Scale 2023}. As
 such, minor differences may be observed to previously published plots.
 }
 \details{
@@ -51,8 +57,8 @@ Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
 sepkoski_curve_base()
 
 # Plot curve with user-defined arguments
-sepkoski_curve_base(title = "Sepkoski's curve",
-               col = "black",
-               fill = TRUE,
-               legend = FALSE)
+sepkoski_curve_base(plot_args = list(main = "Sepkoski's Curve"),
+                    axis_args = list(intervals = list("stages", "periods"),
+                                    lab = FALSE),
+                    legend_args = list(bty = "o"))
 }

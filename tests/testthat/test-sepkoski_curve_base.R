@@ -1,30 +1,38 @@
+suppressPackageStartupMessages(library(vdiffr, quietly = TRUE))
+
 test_that("sepkoski_curve_base() works", {
-  vdiffr::expect_doppelganger("sepkoski_curve()", function() {
-    sepkoski_curve()
+  expect_doppelganger("sepkoski_curve_base()", function() {
+    sepkoski_curve_base()
   })
 })
 
-test_that("sepkoski_curve_base() works with custom arguments", {
-  vdiffr::expect_doppelganger("sepkoski_curve_base() with custom arguments", function() {
-    sepkoski_curve(title = "Sepkoski's Compendium",
-                   height = 0.1,
-                   cols = "black",
-                   int_lab = FALSE,
-                   int_size = 0.5,
-                   fill = TRUE,
-                   legend = FALSE)
+test_that("sepkoski_curve_base() works custom arguments", {
+  expect_doppelganger("sepkoski_curve_base() custom arguments", function() {
+    sepkoski_curve_base(plot_args = list(main = "Sepkoski's Curve"),
+                        axis_args = list(intervals = list("stages", "periods"),
+                                        lab = FALSE),
+                        legend_args = list(bty = "o"))
   })
 })
 
-test_that("sepkoski_curve_base() error handling", {
-  expect_error(sepkoski_curve(title = 1))
-  expect_error(sepkoski_curve(height = "2"))
-  expect_error(sepkoski_curve(cols = 1))
-  expect_error(sepkoski_curve(cols = TRUE))
-  expect_error(sepkoski_curve(int_lab = 1))
-  expect_error(sepkoski_curve(int_size = "1"))
-  expect_error(sepkoski_curve(fill = 1))
-  expect_error(sepkoski_curve(legend = 1))
-  expect_error(sepkoski_curve(legend_size = "1"))
+test_that("sepkoski_curve_base() no legend/axis", {
+  expect_doppelganger("sepkoski_curve_base() no legend/axis", function() {
+    sepkoski_curve_base(plot_args = list(main = "Sepkoski's Curve"),
+                        axis_args = FALSE,
+                        legend_args = FALSE)
+  })
+})
+
+test_that("sepkoski_curve_base() error", {
+  expect_error(sepkoski_curve_base(plot_args = FALSE))
+  expect_error(sepkoski_curve_base(legend_args = TRUE))
+  expect_error(sepkoski_curve_base(axis_args = c("FALSE")))
+})
+
+test_that("sepkoski_curve_base() col repeat", {
+  expect_doppelganger("sepkoski_curve_base() col repeat", function() {
+    sepkoski_curve_base(plot_args = list(main = "Sepkoski's Curve",
+                                         col = "green"))
+  })
 })
 

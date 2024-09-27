@@ -5,8 +5,8 @@
 #' \link[sepkoski]{sepkoski} dataset). No changes have been made to any
 #' taxonomic names in this dataset. However, first and last appearance
 #' intervals have been updated to stages from the
-#' [International Geological Time Scale 2022](
-#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf). As
+#' [International Geological Time Scale 2023](
+#' https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf). As
 #' such, minor differences may be observed to previously published plots.
 #'
 #' @return No return value. Function is used to plot Sepkoski's curve with
@@ -29,15 +29,27 @@
 #' *Bulletins of American Paleontology*, 363, pp. 1--560.
 #'
 #' @importFrom ggplot2 ggplot geom_area scale_fill_viridis_d aes element_blank
-#' @importFrom ggplot2 scale_x_reverse xlab ylab theme_bw theme
+#' @importFrom ggplot2 scale_x_reverse xlab ylab theme_bw theme guides guide_legend
 #' @importFrom deeptime coord_geo
 #'
 #' @examples
 #' # Generate default plot
 #' sepkoski_curve()
-#' # Customise plot
+#'
+#' # Customise plot colours
+#' library(ggplot2)
 #' sepkoski_curve() +
 #'   scale_fill_brewer()
+#'
+#' # Customise geological timescale
+#' library(deeptime)
+#' sepkoski_curve() +
+#'   coord_geo(
+#'     pos = as.list(rep("bottom", 2)),
+#'     dat = list("stages", "periods"),
+#'     height = list(unit(1, "lines"), unit(1, "line")),
+#'     size = list(2.5, 2.5),
+#'     lab = list(FALSE, TRUE))
 #' @export
 sepkoski_curve <- function() {
   ggplot(data = stages, aes(x = mid_ma, y = value, fill = group)) +

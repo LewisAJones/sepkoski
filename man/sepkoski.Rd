@@ -31,7 +31,7 @@ This dataset is a port of \href{https://www.biodiversitylibrary.org/page/2798022
 published compendium of fossil marine animal genera.
 This version of the dataset was pulled from Shanan Peters' \href{http://strata.geology.wisc.edu/jack/}{online database}. No changes have been made to any
 taxonomic names. However, first and last appearance intervals have been
-updated to stages from the \href{https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf}{International Geological Time Scale 2022}. In
+updated to stages from the \href{https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf}{International Geological Time Scale 2023}. In
 updating interval names, some interpretation was required. The
 \link[sepkoski]{interval_table} dataset documents the linked interval names.
 }

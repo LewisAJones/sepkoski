@@ -5,13 +5,19 @@
 #' \link[sepkoski]{sepkoski} dataset). No changes have been made to any
 #' taxonomic names in this dataset. However, first and last appearance
 #' intervals have been updated to stages from the
-#' [International Geological Time Scale 2022](
-#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf). As
+#' [International Geological Time Scale 2023](
+#' https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf). As
 #' such, minor differences may be observed to previously published plots.
 #'
-#' @param plot_args \code{list}.
-#' @param axis_args \code{list}.
-#' @param legend_args \code{list}.
+#' @param plot_args \code{list}. A named list of optional arguments that are
+#'   passed directly to [graphics::plot()]. If `NULL` (default), a default
+#'   list of arguments are used.
+#' @param axis_args \code{list}. A named list of optional arguments that are
+#'   passed directly to [palaeoverse::axis_geo()]. If `NULL` (default), a
+#'   default list of arguments are used. If `FALSE`, no axis is added.
+#' @param legend_args \code{list}. A named list of optional arguments that are
+#'   passed directly to [graphics::legend()]. If `NULL` (default), a default
+#'   list of arguments are used. If `FALSE`, no legend is added.
 #'
 #' @return No return value. Function is used to plot Sepkoski's curve with
 #' user-defined arguments.
@@ -32,17 +38,18 @@
 #' Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
 #' *Bulletins of American Paleontology*, 363, pp. 1--560.
 #'
-#' @importFrom graphics polygon axis par text
+#' @importFrom graphics plot polygon legend axis
+#' @importFrom palaeoverse axis_geo
 #'
 #' @examples
 #' # Plot curve with default arguments
 #' sepkoski_curve_base()
 #'
 #' # Plot curve with user-defined arguments
-#' sepkoski_curve_base(title = "Sepkoski's curve",
-#'                col = "black",
-#'                fill = TRUE,
-#'                legend = FALSE)
+#' sepkoski_curve_base(plot_args = list(main = "Sepkoski's Curve"),
+#'                     axis_args = list(intervals = list("stages", "periods"),
+#'                                     lab = FALSE),
+#'                     legend_args = list(bty = "o"))
 #' @export
 sepkoski_curve_base <- function(plot_args = NULL,
                                 axis_args = NULL,
@@ -52,11 +59,15 @@ sepkoski_curve_base <- function(plot_args = NULL,
   if (!is.null(plot_args) && !is.list(plot_args)) {
     stop("`plot_args` should be NULL or of class list")
   }
-  if (!is.null(axis_args) && !is.list(axis_args)) {
+  if (!is.null(axis_args) &&
+      !is.list(axis_args) &&
+      !isFALSE(axis_args)) {
     stop("`axis_args` should be NULL or of class list")
   }
-  if (!is.null(legend_args) && !is.list(legend_args)) {
-    stop("`legend_args` should be NULL or of class list")
+  if (!is.null(legend_args) &&
+      !is.list(legend_args) &&
+      !isFALSE(legend_args)) {
+    stop("`legend_args` should be NULL, FALSE, or of class list")
   }
 
   ### ARGUMENT SETUP ###
@@ -83,26 +94,39 @@ sepkoski_curve_base <- function(plot_args = NULL,
   user_args <- plot_args
   # Add user args
   args$plot_args <- combine_args(default = default_args, user = user_args)
+  # Recycle colours
+  if (length(args$plot_args$col) < 4) {
+    args$plot_args$col <- rep_len(args$plot_args$col, length.out = 4)
+  }
 
   ## axis ##
-  default_args <- list(intervals = "periods")
-  # Collect user_args
-  user_args <- axis_args
-  # Add user args
-  args$axis_args <- combine_args(default = default_args, user = user_args)
+  if (isFALSE(axis_args)) {
+    args$axis_args <- FALSE
+  } else {
+    default_args <- list(intervals = "periods",
+                         lab_col = "black")
+    # Collect user_args
+    user_args <- axis_args
+    # Add user args
+    args$axis_args <- combine_args(default = default_args, user = user_args)
+  }
 
   ## legend ##
-  default_args <- list(x = "topleft",
-                       legend = c("Cambrian", "Palaeozoic",
-                                  "Modern", "Unassigned"),
-                       fill = args$plot_args$col,
-                       border = "black",
-                       cex = 0.75,
-                       bty = "n")
-  # Collect user_args
-  user_args <- legend_args
-  # Add user args
-  args$legend_args <- combine_args(default = default_args, user = user_args)
+  if (isFALSE(legend_args)) {
+    args$legend_args <- FALSE
+  } else {
+    default_args <- list(x = "topleft",
+                         legend = c("Cambrian", "Palaeozoic",
+                                    "Modern", "Unassigned"),
+                         fill = args$plot_args$col,
+                         border = "black",
+                         cex = 0.75,
+                         bty = "n")
+    # Collect user_args
+    user_args <- legend_args
+    # Add user args
+    args$legend_args <- combine_args(default = default_args, user = user_args)
+  }
 
   ### GENERATE PLOT ####
 
@@ -133,8 +157,14 @@ sepkoski_curve_base <- function(plot_args = NULL,
   }
 
   ### GENERATE AXIS ###
-  do.call(axis_geo, args$axis_args)
+  if (!isFALSE(args$axis_args)) {
+    do.call(axis_geo, args$axis_args)
+  } else {
+    axis(1)
+  }
 
   ### GENERATE LEGEND ###
-  do.call(legend, args$legend_args)
+  if (!isFALSE(args$legend_args)) {
+    do.call(legend, args$legend_args)
+  }
 }

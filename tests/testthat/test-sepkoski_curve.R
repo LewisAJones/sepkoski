@@ -1,4 +1,5 @@
 suppressPackageStartupMessages(library(ggplot2, quietly = TRUE))
+suppressPackageStartupMessages(library(vdiffr, quietly = TRUE))
 
 test_that("sepkoski_curve() works", {
   p <- sepkoski_curve()

@@ -16,7 +16,7 @@ Sepkoski (2002) fossil marine animal genera compendium (i.e. the included
 \link[sepkoski]{sepkoski} dataset). No changes have been made to any
 taxonomic names in this dataset. However, first and last appearance
 intervals have been updated to stages from the
-\href{https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf}{International Geological Time Scale 2022}. As
+\href{https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf}{International Geological Time Scale 2023}. As
 such, minor differences may be observed to previously published plots.
 }
 \details{
@@ -42,7 +42,19 @@ Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
 \examples{
 # Generate default plot
 sepkoski_curve()
-# Customise plot
+
+# Customise plot colours
+library(ggplot2)
 sepkoski_curve() +
   scale_fill_brewer()
+
+# Customise geological timescale
+library(deeptime)
+sepkoski_curve() +
+  coord_geo(
+    pos = as.list(rep("bottom", 2)),
+    dat = list("stages", "periods"),
+    height = list(unit(1, "lines"), unit(1, "line")),
+    size = list(2.5, 2.5),
+    lab = list(FALSE, TRUE))
 }
