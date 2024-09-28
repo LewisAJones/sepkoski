@@ -7,10 +7,11 @@
 #' intervals have been updated to stages from the
 #' [International Geological Time Scale 2023](
 #' https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf). As
-#' such, minor differences may be observed to previously published plots.
+#' such, minor differences may be observed to previously published plots. See
+#' \link[interval_table]{interval_table} for interval definitions.
 #'
-#' @return No return value. Function is used to plot Sepkoski's curve with
-#' user-defined arguments.
+#' @return Function is primiarly used to plot Sepkoski's curve with ggplot2. A
+#' ggplot object is returned invisibly.
 #'
 #' @details Taxa are assigned to evolutionary fauna (EF) categories as follows:
 #'
@@ -52,7 +53,7 @@
 #'     lab = list(FALSE, TRUE))
 #' @export
 sepkoski_curve <- function() {
-  ggplot(data = stages, aes(x = mid_ma, y = value, fill = group)) +
+  ggplot(data = stages, aes(x = max_ma, y = value, fill = group)) +
     geom_area(colour = "black") +
     scale_fill_viridis_d() +
     scale_x_reverse() +

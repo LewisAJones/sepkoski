@@ -21,7 +21,7 @@ interval_table
 \description{
 This dataset provides the interval table used for updating the intervals
 in Sepkoski's fossil marine animal genera compendium with the
-\href{https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf}{International Geological Time Scale 2022}. This table
+\href{https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf}{International Geological Time Scale 2023}. This table
 was generated based on published literature and the \href{https://timescalefoundation.org/resources/geowhen/index.html}{GeoWhen Database}. In the
 majority of cases, this was a clear conversion. However, in several cases
 reasonable interpretation was required.

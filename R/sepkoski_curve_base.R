@@ -7,7 +7,8 @@
 #' intervals have been updated to stages from the
 #' [International Geological Time Scale 2023](
 #' https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf). As
-#' such, minor differences may be observed to previously published plots.
+#' such, minor differences may be observed to previously published plots. See
+#' \link[interval_table]{interval_table} for interval definitions.
 #'
 #' @param plot_args \code{list}. A named list of optional arguments that are
 #'   passed directly to [graphics::plot()]. If `NULL` (default), a default
@@ -77,9 +78,9 @@ sepkoski_curve_base <- function(plot_args = NULL,
   # Set up default arguments
   default_args <- list(x = NULL,
                        y = NULL,
-                       xlab = "Time (Ma)",
+                       xlab = NA,
                        ylab = "Number of Genera",
-                       xlim = c(max(stages$mid), 0),
+                       xlim = c(max(stages$max_ma), 0),
                        ylim = c(0, max(stages$total)),
                        col = c("#FDE725FF",
                                "#35B779FF",
@@ -94,6 +95,8 @@ sepkoski_curve_base <- function(plot_args = NULL,
   user_args <- plot_args
   # Add user args
   args$plot_args <- combine_args(default = default_args, user = user_args)
+  # Set xlab
+  args$plot_args$xlab <- NA
   # Recycle colours
   if (length(args$plot_args$col) < 4) {
     args$plot_args$col <- rep_len(args$plot_args$col, length.out = 4)
@@ -104,6 +107,8 @@ sepkoski_curve_base <- function(plot_args = NULL,
     args$axis_args <- FALSE
   } else {
     default_args <- list(intervals = "periods",
+                         height = 0.075,
+                         lab_size = 1,
                          lab_col = "black")
     # Collect user_args
     user_args <- axis_args
@@ -116,7 +121,7 @@ sepkoski_curve_base <- function(plot_args = NULL,
     args$legend_args <- FALSE
   } else {
     default_args <- list(x = "topleft",
-                         legend = c("Cambrian", "Palaeozoic",
+                         legend = c("Cambrian", "Paleozoic",
                                     "Modern", "Unassigned"),
                          fill = args$plot_args$col,
                          border = "black",
@@ -131,14 +136,14 @@ sepkoski_curve_base <- function(plot_args = NULL,
   ### GENERATE PLOT ####
 
   # Set factor levels
-  stages$group <- factor(stages$group, levels = c("Cambrian", "Palaeozoic",
+  stages$group <- factor(stages$group, levels = c("Cambrian", "Paleozoic",
                                                   "Modern", "Unassigned"))
 
   # Prepare data for plotting
   l <- split.data.frame(x = stages, f = stages$group)
   # Handle colours
   l$Cambrian$col <- args$plot_args$col[1]
-  l$Palaeozoic$col <- args$plot_args$col[2]
+  l$Paleozoic$col <- args$plot_args$col[2]
   l$Modern$col <- args$plot_args$col[3]
   l$Unassigned$col <- args$plot_args$col[4]
 
@@ -151,14 +156,21 @@ sepkoski_curve_base <- function(plot_args = NULL,
     i$ymin <- y
     i$ymax <- y + i$value
     y <- y + i$value
-    polygon(x = c(i$mid_ma, rev(i$mid_ma)),
+    polygon(x = c(i$max_ma, rev(i$max_ma)),
             y = c(i$ymin, rev(i$ymax)),
             col = i$col[1])
   }
 
   ### GENERATE AXIS ###
+  if ("xlab" %in% names(plot_args)) {
+    args$plot_args$xlab <- plot_args$xlab
+  } else {
+    args$plot_args$xlab <- "Time (Ma)"
+  }
+
   if (!isFALSE(args$axis_args)) {
     do.call(axis_geo, args$axis_args)
+    title(xlab = args$plot_args$xlab, line = 4)
   } else {
     axis(1)
   }

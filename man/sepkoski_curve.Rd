@@ -7,8 +7,8 @@
 sepkoski_curve()
 }
 \value{
-No return value. Function is used to plot Sepkoski's curve with
-user-defined arguments.
+Function is primiarly used to plot Sepkoski's curve with ggplot2. A
+ggplot object is returned invisibly.
 }
 \description{
 This function plots Sepkoski's evolutionary fauna (Sepkoski, 1981), using the
@@ -17,7 +17,8 @@ Sepkoski (2002) fossil marine animal genera compendium (i.e. the included
 taxonomic names in this dataset. However, first and last appearance
 intervals have been updated to stages from the
 \href{https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf}{International Geological Time Scale 2023}. As
-such, minor differences may be observed to previously published plots.
+such, minor differences may be observed to previously published plots. See
+\link[interval_table]{interval_table} for interval definitions.
 }
 \details{
 Taxa are assigned to evolutionary fauna (EF) categories as follows:

@@ -62,7 +62,7 @@ bins <- c(stages$min_ma, stages$max_ma[nrow(stages)])
 stages$total <- NA
 stages$unassigned <- 0
 stages$cambrian <- 0
-stages$palaeozoic <- 0
+stages$paleozoic <- 0
 stages$modern <- 0
 
 # Run for loop across genera
@@ -83,7 +83,7 @@ for (i in seq_len(nrow(df))) {
     next
   }
   if (df$fauna[i] == "Paleozoic") {
-    stages$palaeozoic <- stages$palaeozoic + as.numeric(tbl)
+    stages$paleozoic <- stages$paleozoic + as.numeric(tbl)
     next
   }
   if (df$fauna[i] == "Modern") {
@@ -94,7 +94,7 @@ for (i in seq_len(nrow(df))) {
 
 # Add total
 stages$total <- stages$cambrian +
-  stages$palaeozoic +
+  stages$paleozoic +
   stages$modern +
   stages$unassigned
 
@@ -108,7 +108,7 @@ stages$group <- stringr::str_to_sentence(stages$group)
 
 # Set factor levels
 stages$group <- factor(stages$group, levels = c("Unassigned", "Modern",
-                                                "Palaeozoic", "Cambrian"))
+                                                "Paleozoic", "Cambrian"))
 # Convert to data.frame
 stages <- as.data.frame(stages)
 

@@ -65,8 +65,8 @@
 #'
 #' This dataset provides the interval table used for updating the intervals
 #' in Sepkoski's fossil marine animal genera compendium with the
-#' [International Geological Time Scale 2022](
-#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf). This table
+#' [International Geological Time Scale 2023](
+#' https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf). This table
 #' was generated based on published literature and the [GeoWhen Database](
 #' https://timescalefoundation.org/resources/geowhen/index.html). In the
 #' majority of cases, this was a clear conversion. However, in several cases

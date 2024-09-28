@@ -30,7 +30,8 @@ Sepkoski (2002) fossil marine animal genera compendium (i.e. the included
 taxonomic names in this dataset. However, first and last appearance
 intervals have been updated to stages from the
 \href{https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf}{International Geological Time Scale 2023}. As
-such, minor differences may be observed to previously published plots.
+such, minor differences may be observed to previously published plots. See
+\link[interval_table]{interval_table} for interval definitions.
 }
 \details{
 Taxa are assigned to evolutionary fauna (EF) categories as follows:

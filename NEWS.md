@@ -1,3 +1,9 @@
+# sepkoski (development version)
+
+- sepkoski_curve replaced by highly customisable sepkoski_curve_base
+- New sepkoski_curve function generates a ggplot2 plot/object
+- International Geological Time Scale updated to 2023 version
+
 # sepkoski 0.0.1
 Initial submission to CRAN (2022-11-21).
 
