@@ -8,7 +8,7 @@
 #' [International Geological Time Scale 2023](
 #' https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf). As
 #' such, minor differences may be observed to previously published plots. See
-#' \link[interval_table]{interval_table} for interval definitions.
+#' \link[sepkoski]{interval_table} for interval definitions.
 #'
 #' @return Function is primiarly used to plot Sepkoski's curve with ggplot2. A
 #' ggplot object is returned invisibly.
@@ -32,6 +32,7 @@
 #' @importFrom ggplot2 ggplot geom_area scale_fill_viridis_d aes element_blank
 #' @importFrom ggplot2 scale_x_reverse xlab ylab theme_bw theme guides guide_legend
 #' @importFrom deeptime coord_geo
+#' @importFrom rlang .data
 #'
 #' @examples
 #' # Generate default plot
@@ -53,7 +54,8 @@
 #'     lab = list(FALSE, TRUE))
 #' @export
 sepkoski_curve <- function() {
-  ggplot(data = stages, aes(x = max_ma, y = value, fill = group)) +
+  ggplot(data = stages,
+         aes(x = .data$max_ma, y = .data$value, fill = .data$group)) +
     geom_area(colour = "black") +
     scale_fill_viridis_d() +
     scale_x_reverse() +

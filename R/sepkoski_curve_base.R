@@ -8,7 +8,7 @@
 #' [International Geological Time Scale 2023](
 #' https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf). As
 #' such, minor differences may be observed to previously published plots. See
-#' \link[interval_table]{interval_table} for interval definitions.
+#' \link[sepkoski]{interval_table} for interval definitions.
 #'
 #' @param plot_args \code{list}. A named list of optional arguments that are
 #'   passed directly to [graphics::plot()]. If `NULL` (default), a default
@@ -39,7 +39,7 @@
 #' Sepkoski, J. J. (2002). A compendium of fossil marine animal genera.
 #' *Bulletins of American Paleontology*, 363, pp. 1--560.
 #'
-#' @importFrom graphics plot polygon legend axis
+#' @importFrom graphics plot polygon legend axis title
 #' @importFrom palaeoverse axis_geo
 #'
 #' @examples
