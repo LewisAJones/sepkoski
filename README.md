@@ -16,9 +16,10 @@
 The aim of `sepkoski` is to provide a light and easily-accessible solution to working with Sepkoski's compendium to support teaching exercises. The package provides access to:
 
 - `sepkoski_raw` Sepkoski's raw fossil marine animal genera compendium (Sepkoski, 2002).
-- `sepkoski` Sepkoski's compendium with first and last appearance intervals updated to be consistent with stages from the [International Geological Time Scale 2022](https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf).
-- `interval_table` A table linking intervals in Sepkoski's compendium with the [International Geological Time Scale 2022](https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf).
-- A function for plotting Sepkoski's evolutionary fauna for easy reproduction in presentations, articles, etc.
+- `sepkoski` Sepkoski's compendium with first and last appearance intervals updated to be consistent with stages from the [International Geological Time Scale 2023](https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf).
+- `interval_table` A table linking intervals in Sepkoski's compendium with the [International Geological Time Scale 2023](https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf).
+- A function (`sepkoski_curve()`) for plotting Sepkoski's evolutionary fauna with ggplot for easy reproduction in presentations, articles, etc.
+- A function (`sepkoski_curve_base()`) for plotting Sepkoski's evolutionary fauna with base R for easy reproduction in presentations, articles, etc.
 
 Note: In updating interval names, some interpretation was required. The `interval_table` dataset documents the linked interval names. If you notice any issue, or disagree with any of these assignments, please feel free to raise a GitHub issue, and I will do my best to address them as soon as possible.
 
@@ -56,13 +57,49 @@ data("sepkoski")
 data("interval_table")
 ```
 
-The only function in the `sepkoski` package at this time is `sepkoski_curve()`. This can be used to plot Sepkoski's evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. Users may provide their own values to function arguments to customise the appearance, or simply use the default arguments:
+The only two functions in the `sepkoski` package at this time are `sepkoski_curve()` and `sepkoski_curve_base()`. These can be used to plot--with base R or ggplot2--Sepkoski's evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. Users may provide their own values to function arguments or add layers to customise the appearance, or simply use the default arguments:
+
+## Base R
+
+```r
+sepkoski_curve_base()
+```
+![Plot with default arguments](man/figures/sepkoski_curve_base.png)
+Default Phanerozoic plot of Sepkoski's three great evolutionary fauna. Number of genera are counted per international geological stage bin.
+
+```r
+sepkoski_curve_base(plot_args = list(main = "Sepkoski's Curve",
+                                     xlab = "Age (Ma)",
+                                     col = c("#03256c",
+                                             "#2541b2",
+                                             "#1768ac", 
+                                             "#06bee1")))
+```
+![Plot with default arguments](man/figures/sepkoski_curve_base_custom.png)
+Custom Phanerozoic plot of Sepkoski's three great evolutionary fauna. Number of genera are counted per international geological stage bin.
+
+## ggplot2
 
 ```r
 sepkoski_curve()
 ```
-![Plot with default arguments](man/figures/example_curve.png)
-Phanerozoic plot of Sepkoski's three great evolutionary fauna. Number of genera are counted per international geological stage bin.
+![Plot with default arguments](man/figures/sepkoski_curve.png)
+Default Phanerozoic plot of Sepkoski's three great evolutionary fauna. Number of genera are counted per international geological stage bin.
+
+```r
+library(ggplot2)
+library(deeptime)
+sepkoski_curve() +
+  scale_fill_brewer() +
+  coord_geo(
+    pos = as.list(rep("bottom", 2)),
+    dat = list("stages", "periods"),
+    height = list(unit(2, "lines"), unit(2, "line")),
+    size = list(4, 4),
+    lab = list(FALSE, TRUE))
+```
+![Plot with default arguments](man/figures/sepkoski_curve_custom.png)
+Custom Phanerozoic plot of Sepkoski's three great evolutionary fauna. Number of genera are counted per international geological stage bin.
 
 ## References
 

@@ -6,8 +6,8 @@
 #' This version of the dataset was pulled from Shanan Peters' [online database](
 #' http://strata.geology.wisc.edu/jack/). No changes have been made to any
 #' taxonomic names. However, first and last appearance intervals have been
-#' updated to stages from the [International Geological Time Scale 2022](
-#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf). In
+#' updated to stages from the [International Geological Time Scale 2023](
+#' https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf). In
 #' updating interval names, some interpretation was required. The
 #' \link[sepkoski]{interval_table} dataset documents the linked interval names.
 #'
@@ -65,8 +65,8 @@
 #'
 #' This dataset provides the interval table used for updating the intervals
 #' in Sepkoski's fossil marine animal genera compendium with the
-#' [International Geological Time Scale 2022](
-#' https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf). This table
+#' [International Geological Time Scale 2023](
+#' https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf). This table
 #' was generated based on published literature and the [GeoWhen Database](
 #' https://timescalefoundation.org/resources/geowhen/index.html). In the
 #' majority of cases, this was a clear conversion. However, in several cases
