@@ -70,10 +70,13 @@ Default Phanerozoic plot of Sepkoski's three great evolutionary fauna. Number of
 ```r
 sepkoski_curve_base(plot_args = list(main = "Sepkoski's Curve",
                                      xlab = "Age (Ma)",
-                                     col = c("#03256c",
-                                             "#2541b2",
-                                             "#1768ac", 
-                                             "#06bee1")))
+                                     col = c("#2171b5",
+                                             "#6baed6",
+                                             "#bdd7e7", 
+                                             "#eff3ff")),
+                    axis_args = list(intervals = list("stages", "periods"),
+                                     lab = list(FALSE, TRUE),
+                                     height = 0.04))
 ```
 ![Plot with default arguments](man/figures/sepkoski_curve_base_custom.png)
 Custom Phanerozoic plot of Sepkoski's three great evolutionary fauna. Number of genera are counted per international geological stage bin.
