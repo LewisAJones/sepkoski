@@ -77,10 +77,11 @@
 <li>
 <code>sepkoski_raw</code> Sepkoski’s raw fossil marine animal genera compendium (Sepkoski, 2002).</li>
 <li>
-<code>sepkoski</code> Sepkoski’s compendium with first and last appearance intervals updated to be consistent with stages from the <a href="https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf" class="external-link">International Geological Time Scale 2022</a>.</li>
+<code>sepkoski</code> Sepkoski’s compendium with first and last appearance intervals updated to be consistent with stages from the <a href="https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf" class="external-link">International Geological Time Scale 2023</a>.</li>
 <li>
-<code>interval_table</code> A table linking intervals in Sepkoski’s compendium with the <a href="https://stratigraphy.org/ICSchart/ChronostratChart2022-02.pdf" class="external-link">International Geological Time Scale 2022</a>.</li>
-<li>A function for plotting Sepkoski’s evolutionary fauna for easy reproduction in presentations, articles, etc.</li>
+<code>interval_table</code> A table linking intervals in Sepkoski’s compendium with the <a href="https://stratigraphy.org/ICSchart/ChronostratChart2023-09.pdf" class="external-link">International Geological Time Scale 2023</a>.</li>
+<li>A function (<code><a href="reference/sepkoski_curve.html">sepkoski_curve()</a></code>) for plotting Sepkoski’s evolutionary fauna with ggplot for easy reproduction in presentations, articles, etc.</li>
+<li>A function (<code><a href="reference/sepkoski_curve_base.html">sepkoski_curve_base()</a></code>) for plotting Sepkoski’s evolutionary fauna with base R for easy reproduction in presentations, articles, etc.</li>
 </ul>
 <p>Note: In updating interval names, some interpretation was required. The <code>interval_table</code> dataset documents the linked interval names. If you notice any issue, or disagree with any of these assignments, please feel free to raise a GitHub issue, and I will do my best to address them as soon as possible.</p>
 </div>
@@ -110,10 +111,41 @@
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"sepkoski"</span><span class="op">)</span></span>
 <span><span class="co"># Interval table</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"interval_table"</span><span class="op">)</span></span></code></pre></div>
-<p>The only function in the <code>sepkoski</code> package at this time is <code><a href="reference/sepkoski_curve.html">sepkoski_curve()</a></code>. This can be used to plot Sepkoski’s evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. Users may provide their own values to function arguments to customise the appearance, or simply use the default arguments:</p>
+<p>The only two functions in the <code>sepkoski</code> package at this time are <code><a href="reference/sepkoski_curve.html">sepkoski_curve()</a></code> and <code><a href="reference/sepkoski_curve_base.html">sepkoski_curve_base()</a></code>. These can be used to plot–with base R or ggplot2–Sepkoski’s evolutionary fauna (Sepkoski, 1981) using the Sepkoski (2002) fossil marine animal genera compendium. Users may provide their own values to function arguments or add layers to customise the appearance, or simply use the default arguments:</p>
+</div>
+<div class="section level2">
+<h2 id="base-r">Base R<a class="anchor" aria-label="anchor" href="#base-r"></a>
+</h2>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/sepkoski_curve_base.html">sepkoski_curve_base</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/sepkoski_curve_base.png" alt="Plot with default arguments"> Default Phanerozoic plot of Sepkoski’s three great evolutionary fauna. Number of genera are counted per international geological stage bin.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/sepkoski_curve_base.html">sepkoski_curve_base</a></span><span class="op">(</span>plot_args <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>main <span class="op">=</span> <span class="st">"Sepkoski's Curve"</span>,</span>
+<span>                                     xlab <span class="op">=</span> <span class="st">"Age (Ma)"</span>,</span>
+<span>                                     col <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"#03256c"</span>,</span>
+<span>                                             <span class="st">"#2541b2"</span>,</span>
+<span>                                             <span class="st">"#1768ac"</span>, </span>
+<span>                                             <span class="st">"#06bee1"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/sepkoski_curve_base_custom.png" alt="Plot with default arguments"> Custom Phanerozoic plot of Sepkoski’s three great evolutionary fauna. Number of genera are counted per international geological stage bin.</p>
+</div>
+<div class="section level2">
+<h2 id="ggplot2">ggplot2<a class="anchor" aria-label="anchor" href="#ggplot2"></a>
+</h2>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/sepkoski_curve.html">sepkoski_curve</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/example_curve.png" alt="Plot with default arguments"> Phanerozoic plot of Sepkoski’s three great evolutionary fauna. Number of genera are counted per international geological stage bin.</p>
+<p><img src="reference/figures/sepkoski_curve.png" alt="Plot with default arguments"> Default Phanerozoic plot of Sepkoski’s three great evolutionary fauna. Number of genera are counted per international geological stage bin.</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://williamgearty.com/deeptime/" class="external-link">deeptime</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/sepkoski_curve.html">sepkoski_curve</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_brewer.html" class="external-link">scale_fill_brewer</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://williamgearty.com/deeptime/reference/coord_geo.html" class="external-link">coord_geo</a></span><span class="op">(</span></span>
+<span>    pos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">as.list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="st">"bottom"</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    dat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">"stages"</span>, <span class="st">"periods"</span><span class="op">)</span>,</span>
+<span>    height <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grid/unit.html" class="external-link">unit</a></span><span class="op">(</span><span class="fl">2</span>, <span class="st">"lines"</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/grid/unit.html" class="external-link">unit</a></span><span class="op">(</span><span class="fl">2</span>, <span class="st">"line"</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    size <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">4</span><span class="op">)</span>,</span>
+<span>    lab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="cn">FALSE</span>, <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/sepkoski_curve_custom.png" alt="Plot with default arguments"> Custom Phanerozoic plot of Sepkoski’s three great evolutionary fauna. Number of genera are counted per international geological stage bin.</p>
 </div>
 <div class="section level2">
 <h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
@@ -192,7 +224,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
     </footer>
