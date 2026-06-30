@@ -1,8 +1,8 @@
 # sepkoski <img src="man/figures/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/LewisAJones/sepkoski/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/LewisAJones/sepkoski/actions/workflows/R-CMD-check.yaml)
-[![Codecov test coverage](https://codecov.io/gh/LewisAJones/sepkoski/branch/main/graph/badge.svg?token=47HS5IX7M1)](https://app.codecov.io/gh/LewisAJones/sepkoski?branch=main)
+[![R-CMD-check](https://github.com/palaeoverse/sepkoski/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/palaeoverse/sepkoski/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/palaeoverse/sepkoski/branch/main/graph/badge.svg?token=47HS5IX7M1)](https://app.codecov.io/gh/palaeoverse/sepkoski?branch=main)
 [![CRAN status](https://www.r-pkg.org/badges/version/sepkoski)](https://CRAN.R-project.org/package=sepkoski)
 [![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/sepkoski)](https://cran.r-project.org/package=sepkoski)
 [![DOI](https://zenodo.org/badge/564230284.svg)](https://zenodo.org/badge/latestdoi/564230284)
@@ -36,7 +36,7 @@ The development version of `sepkoski` can be installed via GitHub using:
 
 ```r
 # Install development version of the package
-devtools::install_github("LewisAJones/sepkoski")
+devtools::install_github("palaeoverse/sepkoski")
 ```
 
 ## Usage
