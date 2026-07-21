@@ -12,9 +12,9 @@ Stratigraphic ranges of fossil marine animal genera from Sepkoski's (2002) publi
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/LewisAJones/sepkoski}
-  \item \url{https://lewisajones.github.io/sepkoski/}
-  \item Report bugs at \url{https://github.com/LewisAJones/sepkoski/issues}
+  \item \url{https://github.com/palaeoverse/sepkoski}
+  \item \url{https://palaeoverse.github.io/sepkoski/}
+  \item Report bugs at \url{https://github.com/palaeoverse/sepkoski/issues}
 }
 
 }
