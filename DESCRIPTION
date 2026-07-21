@@ -29,6 +29,7 @@ Imports:
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Config/testthat/edition: 3
+Config/Needs/website: palaeoverse/palaeoverse.template
 URL: https://github.com/palaeoverse/sepkoski,
     https://sepkoski.palaeoverse.org/
 BugReports: https://github.com/palaeoverse/sepkoski/issues
